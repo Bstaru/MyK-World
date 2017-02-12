@@ -10,31 +10,27 @@ Colores:
 
 /*GENERALES*/
 	body{
-		font-family: 'Lato', sans-serif;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-image: url('../img/chino2.jpg');
+		background-image: url('../img/chino1.jpg');
+		overflow-x: hidden;
 	}
-	input, h1, h2, h3, h4, h5, select{
+	body,input, h1, h2, h3, h4, h5, select, p, a{
 		font-family: 'Lato', sans-serif;
+	}
+	a, a:hover{
+		text-decoration: none;
 	}
 
-/*IMG DE FONDO*/
-	.fondo img{
-	    background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-image: url('../img/chino2.jpg');
-	}
 
 /*LOGIN*/
 	.login{
 		z-index: 101;
 		position: absolute;
-		top: 20%;
+		top: 15%;
 		padding: 50px 0;
 		background-color: rgba(246,230,203,0.4);
-		
+		border-radius: 30px;
 		}
 			@keyframes moveLI {
 			    from {left: 0px;}
@@ -72,11 +68,11 @@ Colores:
 		display: none;
 		z-index: 101;
 		position: absolute;
-		top: 20%;
+		top: 15%;
 		left: 1100px;
 		padding: 50px 0;
 		background-color: rgba(246,230,203,0.4);
-		
+		border-radius: 30px;
 		}
 			@keyframes moveYLI {
 			    from {left: 1100px;}
@@ -101,7 +97,7 @@ Colores:
 			width: 80%;
 			height: 40px;
 			margin: 8px;
-			padding:  5px 0;
+			padding:  5px;
 			border:2px solid white;
 			border-radius: 30px;
 			font-size: 20pt;
@@ -117,6 +113,76 @@ Colores:
 			color: white;
 			font-size: 15pt;
 	}
+
+/*REGISTRO*/
+	.registro{		
+		display: none;
+		z-index: 101;
+		position: absolute;
+		top: 5%;
+		border-radius: 45px;
+		background-color: rgba(246,230,203,0.4);
+	}
+		@keyframes moveSU {
+			    from {left: 1100px;}
+			    to {left: 0px;}
+				}
+				.animacionSU{
+					display: inline;
+					animation: moveSU 3s;
+					animation-timing-function: ease;
+					left: 0px;
+				}
+		@keyframes moveSUtoLI {
+			    from {left: 0px;}
+			    to {left: -1200px;}
+				}
+				.animacionSUtoLI{
+					animation: moveSUtoLI 3s;
+					animation-timing-function: ease;
+					left: -1200px;
+				}
+		.descSU{
+			text-align:center;
+		}
+		.descSU, .textSU{
+			font-size: 16pt;
+			margin-top: 30px;			
+			color: black;
+		}
+		.textSU{
+			padding: 3px;
+			border: 2px solid white;
+			border-radius: 30px;
+		}
+		.OkSU{
+			width: 45%;
+			height: 40px;
+			margin: 15px;
+			padding: 5px 0;
+			background-color: #bf2c50;
+			border:2px solid #bf2c50;
+			border-radius: 30px;
+			color: white;
+			font-size: 15pt;
+		}
+		.registro p{
+			color: black;
+			font-size: 15pt;
+		}
+		.loginback{	
+			display: inline-block;	
+			height: 40px;
+			padding: 5px 0;
+			color: #bf2c50;
+			font-size: 15pt;
+		}
+		.loginback:hover{
+			font-size: 15;
+			color:#ffffff;			
+			text-shadow: 0 0 15px #ffffff;
+			transform: scale(1.05);
+		}
 		
 /*FOOTER*/
 	.pie{
@@ -128,10 +194,11 @@ Colores:
 	}
 	.pie a{
         color: black;
-        text-decoration: none;
      	}
      .pie a:hover{
-         color: white;
+         color: white;         
+		text-shadow: 0 0 15px #FFFFFF;
+		transform: scale(1.05);
 		}
 	.about{
 	    font-size: 15PT;
@@ -158,11 +225,11 @@ Colores:
 			 	top: 10%;
 			 	position: relative;
 		 	}
-			.animacionLI{
-				animation: none;
-				animation-timing-function: none;
-				left: 0px;
-			}
+				.animacionLI{
+					animation: none;
+					animation-timing-function: none;
+					left: 0px;
+				}
 			.yeslogin{
 				display: none;
 				z-index: 101;
@@ -172,12 +239,38 @@ Colores:
 				padding: 50px 0;
 				background-color: rgba(246,230,203,1);		
 			}
-			.animacionYLI{
-					display: inline;
-					animation: none;
-					animation-timing-function: none;
-					left: 0px;
+				.animacionYLI{
+						display: inline;
+						animation: none;
+						animation-timing-function: none;
+						left: 0px;
+				}
+			.registro{
+				display: none;
+				z-index: 101;
+				position: absolute;
+				left: 1100px;
+				padding: 0;
+				background-color: rgba(246,230,203,1);		
 			}
+				.descSU, .textSU{
+					margin-top: 10px;
+					}
+				.animacionSU{
+						display: inline;
+						animation: none;
+						animation-timing-function: none;
+						left: 0px;
+				}
+				.animacionSUtoLI{
+						display: inline;
+						animation: none;
+						animation-timing-function: none;
+						left: 0px;
+				}
+				.hideLogin{
+					display: none;
+				}
 	}
 
 
