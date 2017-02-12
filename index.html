@@ -18,8 +18,6 @@
 
 <body>
 
-<!--FONDO-->
-
 <!--LOGIN-->
 	<div class = "row-fluid col-lg-offset-4 col-md-offset-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 login">
 
@@ -33,12 +31,12 @@
 
 		<center>
 			<input type="button" name="" value = "Sign Up" class="botonSU">
-			<input type="button" name="" value = "Log In" class="botonLI">
+			<input type="button" name="" value = "LogIn" class="botonLI">
 		</center>
 	
 
 	</div>
-<!--SINGUP-->
+<!--YES LOGIN-->
 	<div class = "row-fluid col-lg-offset-4 col-md-offset-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 yeslogin">
 
 		<div class="logo">
@@ -52,10 +50,50 @@
 		<center>
 			<input type="text" name="" value = "" class="email" required placeholder="Correo electrónico">
 			<input type="text" name="" value = "" class="password" required placeholder="Contraseña">
-			<input type="button" name="" value = "Log in" class="OkLI">
+			<input type="button" name="" value = "Login" class="OkLI">
 		</center>
-	
+	</div>
 
+<!--SINGUP-->	
+	<div class="row-fluid col-lg-offset-3 col-md-offset-3 col-lg-6 col-md-6 col-sm-12 col-xs-12 registro">
+		
+			<div class="row-fluid">
+				<form>
+					<div class="descSU col-lg-4 col-md-4 col-sm-12 col-xs-12">Username</div>
+					<input type="text" name="username" class="textSU col-lg-8 col-md-8 col-sm-12 col-xs-12" required placeholder="Username">
+
+					<div class="descSU col-lg-4 col-md-4 col-sm-12 col-xs-12">Email</div>
+					<input type="text" name="email" class="textSU col-lg-8 col-md-8 col-sm-12 col-xs-12" required placeholder="Email">
+
+					<div class="descSU col-lg-4 col-md-4 col-sm-12 col-xs-12">Password</div>
+					<input type="text" name="password" class="textSU col-lg-8 col-md-8 col-sm-12 col-xs-12" required placeholder="Password">
+
+					<div class="descSU col-lg-4 col-md-4 col-sm-12 col-xs-12">Name</div>
+					<input type="text" name="name" class="textSU col-lg-8 col-md-8 col-sm-12 col-xs-12" required placeholder="Name">
+
+					<div class="descSU col-lg-4 col-md-4 col-sm-12 col-xs-12">Lastname</div>
+					<input type="text" name="lastname" class="textSU col-lg-8 col-md-8 col-sm-12 col-xs-12" required placeholder="Lastname">
+
+					<div class="descSU col-lg-4 col-md-4 col-sm-12 col-xs-12">Birthday</div>
+					<input type="date" name="birthday" class="textSU col-lg-8 col-md-8 col-sm-12 col-xs-12">
+					
+					<div class="descSU col-lg-4 col-md-4 col-sm-12 col-xs-12">Gender</div>
+					<select class="textSU col-lg-8 col-md-8 col-sm-12 col-xs-12">
+						<option value="woman">Female</option>
+						<option value="man">Male</option>
+						<option value="other">Other</option>
+					</select>
+
+					<center>
+							<input type="button" name="OkSU" value="Sign Up" class="OkSU">
+					</center>			
+				</form>
+			</div>
+			<div>
+				<center>
+					<p>I already have an account: <a href="#" class="loginback">Login</a></p>
+				</center>
+			</div>	
 	</div>
 
 <!--FOOTER-->
