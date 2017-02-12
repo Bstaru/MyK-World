@@ -1,0 +1,183 @@
+/*
+Colores:
+	crema: 		#f6e6cb; 		rgb(246,230,203);
+	crema2: 	#ffbd92;		rgb(255,189146);
+	rojo1: 		#bf2c50;		rgb(191,44,80);
+	rojo2: 		#ae1f42;		rgb(174,31,66);
+	rojo3: 		#991c43;		rgb(153,28,67);
+	rojo4:		#94093b;		rgb(148,9,59);
+*/
+
+/*GENERALES*/
+	body{
+		font-family: 'Lato', sans-serif;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url('../img/chino2.jpg');
+	}
+	input, h1, h2, h3, h4, h5, select{
+		font-family: 'Lato', sans-serif;
+	}
+
+/*IMG DE FONDO*/
+	.fondo img{
+	    background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url('../img/chino2.jpg');
+	}
+
+/*LOGIN*/
+	.login{
+		z-index: 101;
+		position: absolute;
+		top: 20%;
+		padding: 50px 0;
+		background-color: rgba(246,230,203,0.4);
+		
+		}
+			@keyframes moveLI {
+			    from {left: 0px;}
+			    to {left: -1100px;}
+				}
+				.animacionLI{
+					animation: moveLI 3s;
+					animation-timing-function: ease;
+					left: -1100px;
+				}
+
+		.logo img{	
+			width: 300px;
+			height: 162px;
+		}
+		.login h3{
+			font-size: 15pt;		
+			font-weight: bold;
+			text-align: center;
+		}
+		.botonSU, .botonLI{
+			width: 80%;
+			height: 55px;
+			margin: 8px;
+			padding:  5px 0;
+			background-color: #bf2c50; /*rojo1*/
+			border:2px solid #bf2c50;
+			border-radius: 30px;
+			color: white;
+			font-size: 20pt;
+		}
+
+/*yesLOGIN*/
+	.yeslogin{
+		display: none;
+		z-index: 101;
+		position: absolute;
+		top: 20%;
+		left: 1100px;
+		padding: 50px 0;
+		background-color: rgba(246,230,203,0.4);
+		
+		}
+			@keyframes moveYLI {
+			    from {left: 1100px;}
+			    to {left: 0px;}
+				}
+				.animacionYLI{
+					display: inline;
+					animation: moveYLI 3s;
+					animation-timing-function: ease;
+					left: 0px;
+				}
+		.logo img{	
+			width: 300px;
+			height: 162px;
+		}
+		.yeslogin h3{
+			font-size: 15pt;		
+			font-weight: bold;
+			text-align: center;
+		}
+		.email, .password{
+			width: 80%;
+			height: 40px;
+			margin: 8px;
+			padding:  5px 0;
+			border:2px solid white;
+			border-radius: 30px;
+			font-size: 20pt;
+			display: block;
+		}
+		.OkLI{
+			width: 30%;
+			height: 35px;
+			margin: 8px;
+			background-color: #bf2c50; /*rojo1*/
+			border:2px solid #bf2c50;
+			border-radius: 30px;
+			color: white;
+			font-size: 15pt;
+	}
+		
+/*FOOTER*/
+	.pie{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-position: bottom;
+    background-color: #991c43;;
+	}
+	.pie a{
+        color: black;
+        text-decoration: none;
+     	}
+     .pie a:hover{
+         color: white;
+		}
+	.about{
+	    font-size: 15PT;
+		}
+
+	.about, .cosita, .cr{
+	    color: white;
+	    padding: 3px 0;
+			}
+
+/*RESPONSIVA*/
+	@media (max-width: 1024px) {
+			body{				
+				background-color: rgb(246,230,203);
+
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-image: none;
+			}
+		 	.fondo img{
+		 		display: none;
+		 	}
+		 	.login{
+			 	top: 10%;
+			 	position: relative;
+		 	}
+			.animacionLI{
+				animation: none;
+				animation-timing-function: none;
+				left: 0px;
+			}
+			.yeslogin{
+				display: none;
+				z-index: 101;
+				position: absolute;
+				top: 10%;
+				left: 1100px;
+				padding: 50px 0;
+				background-color: rgba(246,230,203,1);		
+			}
+			.animacionYLI{
+					display: inline;
+					animation: none;
+					animation-timing-function: none;
+					left: 0px;
+			}
+	}
+
+
