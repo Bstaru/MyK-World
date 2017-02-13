@@ -55,10 +55,63 @@ Colores:
 		border-radius: 30px;
 	}
 
+/*CONTENIDO*/
+.corcho{
+	height: 700px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('../img/corcho.png');
+	border: 10px solid #959498;
+	margin: 20px auto;
+}
+	.PP{
+		-webkit-transform: rotate(352deg);
+    	transform: rotate(352deg);
+    	margin: 5px;
+	}
+		.PolaroidProfile{
+			height: 270px; width: 255px;
+			background-color: white;
+			margin: 0;
+			}
+			.PolaroidProfile img{
+				margin: 20px;
+				height: 220px; width: 215px;
+			}
+		.NameProfile{
+			height:50px; width: 255px;		
+			background-color: white;
+			margin: 0;
+			}
+			.NameProfile h4{
+				margin: 0;
+				text-align: center;
+				color: black;
+				font-size: 25pt;
+			}
+	.note{
+		padding: 15px;
+	}
+	.note p, .note h5{
+		margin: 10px auto 10px 10%;
+		z-index: 101;
+		position: fixed;
+		font-size: 17pt;
+		width: 40%;
+		/*text-shadow:   	0 0 5px rgba(0,0,0,.1),
+	              		0 1px 3px rgba(0,0,0,.3),
+	               		0 3px 5px rgba(0,0,0,.2),
+	               		0 5px 10px rgba(0,0,0,.25),
+	               		0 10px 10px rgba(0,0,0,.2),
+	               		0 20px 20px rgba(0,0,0,.15);*/
+	}
+	.note img{
+		z-index: 100;
+	}
+
 /*FOOTER*/
 	.pie{
     position: absolute;
-    bottom: 0;
     width: 100%;
     background-position: bottom;
     background-color: #991c43;;
@@ -88,12 +141,34 @@ Colores:
 		 	width: 35px;
 		 	margin: 5px;
 		 }
+		 .img1:hover, .img2:hover, .img3:hover{
+		 	border-radius: 30px;
+		 	box-shadow:0px 0px 15px rgba(255,255,255,.5);
+		 	transform: scale(1.05);
+		 }
 		 .lineaverse{
 		 	display: none;
 		 }
 
 /*RESPONSIVA*/
 	@media (max-width: 1024px) {
+		/*polaroid perfil*/
+		.PP{
+			margin: 0 auto;
+		}
+		.PolaroidProfile{
+			height: 200px; width: 200px;
+		}
+		.PolaroidProfile img{
+			height: 160px; width: 160px;
+		}
+		.NameProfile{
+			height:40px; width: 200px;	
+		}
+		.NameProfile h4{
+			font-size: 20pt;
+		}
+		/*footer*/
 			.nb-link{
 				font-size: 13pt;
 			}
