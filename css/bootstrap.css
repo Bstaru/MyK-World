@@ -6253,6 +6253,20 @@ button.close {
 .carousel-inner > .item > a > img {
   line-height: 1;
 }
+
+.carousel .item {
+  height: 300px;
+  
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-inner > .item {
     -webkit-transition: -webkit-transform .6s ease-in-out;
