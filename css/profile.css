@@ -128,7 +128,6 @@ Colores:
 			color: white;
 			text-align: center;
 		}
-
 	.cinta{
 		z-index: 105;
 		margin: 0 auto;
@@ -215,7 +214,7 @@ Colores:
 		 }
 
 /*RESPONSIVA*/
-	@media (max-width: 1024px) {
+	@media (max-width: 1020px) {
 		.corcho{
 			background-image: none;
 			background-color: #bf2c50;
@@ -225,32 +224,35 @@ Colores:
 			.PP{
 			-webkit-transform: rotate(0deg);
 	    	transform: rotate(0deg);
-			padding: 5px;
+			padding: 0px;
 	    	box-shadow: none;
 	    	z-index: 100;
 		}
 			.PolaroidProfile{
-				height: 200px; 
-			}
+				height: 200px; width: 200px;
+				}
 				.PolaroidProfile img{
 					height: 160px; width: 160px;
 				}
 			.NameProfile{
-				height:40px; width: 200px;	
+				height:40px;
+				width: 200px;	
 			}
-			.NameProfile h4{
-				font-size: 20pt;
-			}
+				.NameProfile h4{
+					font-size: 20pt;
+				}
 
 		.note{
 			background-color: #ae1f42;
 			background-image: none;
 			color: white;
 			z-index: 100;
+			padding:0;
 			}
 			.name, .bd, .dsc{
 				padding: 0.5%;
 				font-size: 13pt;
+				text-align: center;
 			}
 
 		.cinta{
@@ -266,5 +268,21 @@ Colores:
 			.lineaverse{
 		 	display: inline;
 		 }
+
+		 	.PhotoG, .PhotoS, .PhotoD, .PhotoA{
+				background-color: #ae1f42;
+			}
+			.NameG, .NameS,.NameD,.NameA{
+			height:35px;		
+			background-color:  #ae1f42;
+			}
+			.NameG h4,
+			.NameS h4,
+			.NameD h4,
+			.NameA h4{
+				text-align: center;
+				color: white;
+				font-size: 15pt;
+			}
 
 	}
