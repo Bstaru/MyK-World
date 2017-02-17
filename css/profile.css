@@ -57,7 +57,6 @@ Colores:
 
 /*CONTENIDO*/
 .corcho{
-	height: 700px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url('../img/corcho.png');
@@ -69,13 +68,12 @@ Colores:
     	transform: rotate(352deg);
     	z-index: 103;
     	margin-top: 3%;
-    	width: 240px;
     	box-shadow:18px 11px 15px rgba(0,0,0,.5);
-	}
+		}
 		.PolaroidProfile{
 			height: 270px; width: 255px;
 			background-color: #f4f4f4;
-			margin: 0;
+			margin: 0 auto;
 			}
 			.PolaroidProfile img{
 				margin: 20px;
@@ -84,7 +82,7 @@ Colores:
 		.NameProfile{
 			height:50px; width: 255px;		
 			background-color: #f4f4f4;
-			margin: 0;
+			margin: -1px auto 0 auto;
 			}
 			.NameProfile h4{
 				margin: 0;
@@ -117,10 +115,63 @@ Colores:
 			display: block;
 			font-size: 17pt;
 		}
-		.note img{
-			z-index: 100;
-			width: 100%;
+
+	.likes{
+		background-color: #991c43;
+		display: block;
+		border: 3px solid white;
+		border-style: dashed;
+		border-radius: 10px;
+		margin-top: 3%;
 		}
+		.letra h3{
+			color: white;
+			text-align: center;
+		}
+
+	.cinta{
+		z-index: 105;
+		margin: 0 auto;
+		height: 50px; width: 60px;
+		}
+		.cinta img{
+			z-index: 105;
+			height: 75px; width: 75px;
+		}
+	.like_GSDA{
+		margin: 5% auto;
+		}
+		.like_G,.like_S,.like_D,.like_A{
+			z-index: 101;
+			margin: 0;
+		}
+		.PhotoG, .PhotoS, .PhotoD, .PhotoA{
+			z-index: 101;
+			background-color: #f4f4f4;
+			}
+			.PhotoG img,
+			.PhotoS img,
+			.PhotoD img,
+			.PhotoA img{
+				z-index: 101;
+				margin:  0 auto;
+				padding: 20px 0 ;
+				width: 200px;
+			}
+		.NameG, .NameS,.NameD,.NameA{
+			height:50px;		
+			background-color: #f4f4f4;
+			margin: -1px auto 0 auto;
+			}
+			.NameG h4,
+			.NameS h4,
+			.NameD h4,
+			.NameA h4{
+				margin: 0;
+				text-align: center;
+				color: black;
+				font-size: 20pt;
+			}
 
 /*FOOTER*/
 	.pie{
@@ -165,24 +216,45 @@ Colores:
 
 /*RESPONSIVA*/
 	@media (max-width: 1024px) {
+		.corcho{
+			background-image: none;
+			background-color: #bf2c50;
+			border: none;
+		}
 		/*polaroid perfil*/
-		.PP{
-			
-			vertical-align:middle;
-			width: 190px;
-    		box-shadow:18px 11px 15px rgba(0,0,0,.5);
+			.PP{
+			-webkit-transform: rotate(0deg);
+	    	transform: rotate(0deg);
+			padding: 5px;
+	    	box-shadow: none;
+	    	z-index: 100;
 		}
-		.PolaroidProfile{
-			height: 200px; width: 200px;
-		}
-		.PolaroidProfile img{
-			height: 160px; width: 160px;
-		}
-		.NameProfile{
-			height:40px; width: 200px;	
-		}
-		.NameProfile h4{
-			font-size: 20pt;
+			.PolaroidProfile{
+				height: 200px; 
+			}
+				.PolaroidProfile img{
+					height: 160px; width: 160px;
+				}
+			.NameProfile{
+				height:40px; width: 200px;	
+			}
+			.NameProfile h4{
+				font-size: 20pt;
+			}
+
+		.note{
+			background-color: #ae1f42;
+			background-image: none;
+			color: white;
+			z-index: 100;
+			}
+			.name, .bd, .dsc{
+				padding: 0.5%;
+				font-size: 13pt;
+			}
+
+		.cinta{
+			display: none;
 		}
 		/*footer*/
 			.nb-link{
