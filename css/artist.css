@@ -61,25 +61,32 @@ Colores:
 	background-color: #991c43;
 	margin-bottom: 20px;
 }
+.smolbio{
+	background-color: white;
+	border-radius: 30px;
+	text-align: center;
+	font-size: 25px;
+	color: black;
+}
 .foto{
 }
-.foto img{
-	height: 250px; width: 250px;
-	display: block;
-	margin: 0 auto;
-}
-.foto h4{
-	color: white;
-	text-align: center;
-	font-size: 20pt;
-}
+	.foto img{
+		height: 250px; width: 250px;
+		display: block;
+		margin: 0 auto;
+	}
+	.foto h4{
+		color: white;
+		text-align: center;
+		font-size: 20pt;
+	}
 .descrip, .follow{
 	padding: 15px;
 }
-.descrip p{	
-	color: white;
-	font-size: 20pt;
-}
+	.descrip ul{	
+		color: white;
+		font-size: 15pt;
+	}
 .follow img{
 	display: inline-block;
 	height: 50px; width: 50px;
@@ -95,6 +102,14 @@ Colores:
 	color: white;
 	font-size: 20pt;
 }
+.mas ul{
+		color: white;
+		font-size: 13pt;
+		margin-top: 15px;
+	}
+	.mas li{
+		margin: 15px;
+	}
 
 /*FOOTER*/
 	.pie{
