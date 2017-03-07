@@ -1,3 +1,36 @@
+body{
+	background-color: white;
+	font: normal normal 1vw Verdana;
+}
+
+
+.carouselBoard{	height: 20%;}
+
+.carouselPanel,.carouselMenu{
+	padding: 0px;
+	background-color: #ffbd92;
+	height:300px;
+}
+
+.carouselMenu ul {height: 100%; }
+
+.carouselMenu li {	height: 20%;}
+
+.carouselMenu a{color: white; font: normal normal 1.5vw Verdana, sans-serif; height: 100%; padding: 20%;}
+
+.carouselMenu li.active a, .carouselMenu li.active a:focus{ background-color:#991c43;}
+
+.carouselMenu li a:hover, .carouselMenu li.active a:hover{color: #991c43;background-color:#f6e6cb;}
+
+
 .newsBoard{
 	margin: auto;
+	width: auto;
+	padding: 3%;
+	background-color: rgb(246,230,203);
+	border-radius: 5px;
 }
+
+.newsBoard p{padding: 5%; font-style: italic;}
+
+.newsBoard h1{color: #991c43;}
