@@ -5,7 +5,7 @@ body{
 
 .navbar{
 	background-color: white;
-	box-shadow: 2px 2px 2px #E7E7E7;
+	box-shadow: 3px 3px 3px #E7E7E7;
 	color:gray;
 }
 
@@ -35,7 +35,7 @@ body{
 
 .nav-stacked > li + li{margin:0px;}
 
-.carouselMenu a{color: white; font: normal normal 1vw Verdana, sans-serif; 	min-height: 100%; padding: 20%;}
+.carouselMenu a{color: white; font: normal normal 14px Verdana, sans-serif; 	min-height: 100%; padding: 20%;}
 
 .carouselMenu li.active a, .carouselMenu li.active a:focus{ background-color:#991c43;}
 
