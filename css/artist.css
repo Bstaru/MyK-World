@@ -110,6 +110,14 @@ Colores:
 	.mas li{
 		margin: 15px;
 	}
+	
+	.pabajo{
+		cursor: pointer;
+		margin-top: 2px;
+		margin-right: 1%;
+		float: right;
+		color: black
+	}
 
 /*FOOTER*/
 	.pie{
