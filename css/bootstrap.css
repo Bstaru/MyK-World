@@ -3344,18 +3344,18 @@ fieldset[disabled] .btn-warning.focus {
 .btn-danger {
   color: #fff;
   background-color: #d9534f;
-  border-color: #d43f3a;
+  border-color: #94093b;
 }
 .btn-danger:focus,
 .btn-danger.focus {
   color: #fff;
   background-color: #c9302c;
-  border-color: #761c19;
+  border-color: #94093b;
 }
 .btn-danger:hover {
   color: #fff;
-  background-color: #c9302c;
-  border-color: #ac2925;
+  background-color: #94093b;
+  border-color: #94093b;
 }
 .btn-danger:active,
 .btn-danger.active,
@@ -6256,7 +6256,7 @@ button.close {
 
 .carousel .item {
   height: 300px;
-  width: 100%;
+  min-width: 100%;
   
 }
 
@@ -6265,6 +6265,7 @@ button.close {
     top: 0;
     left: 0;
     min-height: 300px;
+     min-width: 100%;
 }
 
 
