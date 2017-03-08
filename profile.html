@@ -13,50 +13,63 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<!--Estilos-->	
-	<link href="css/profile.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
+
+ <div class="container-fluid">
+
 <!--NAVBAR-->
-	<nav class="navbar nb-color" role="navigation">
-		<div class = "container">
-	  <!-- El logotipo y el icono que despliega el menú se agrupan
-	       para mostrarlos mejor en los dispositivos móviles -->
-	  <div class="navbar-header">
-	    <button type="button" class="navbar-toggle nb-btn-mini" data-toggle="collapse"
-	            data-target=".navbar-ex1-collapse">
-	      <span class="sr-only">More</span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </button>
-	    <a class="navbar-brand logotipo" href="start.html"><img src="img/planet.png" class = "logoNav"></a>
-	  </div>
-	 
-	  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
-	       otro elemento que se pueda ocultar al minimizar la barra -->
-	  <div class="collapse navbar-collapse navbar-ex1-collapse">
+  <div class="row">
+    <nav class="navbar nb-color" role="navigation">
+                  <div class = "container">
+                  <!-- El logotipo y el icono que despliega el menú se agrupan
+                       para mostrarlos mejor en los dispositivos móviles -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle nb-btn-mini" data-toggle="collapse"
+                            data-target=".navbar-ex1-collapse">
+                      <span class="sr-only">More</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logotipo" href="start.html"><img src="img/planet.png" class = "logoNav"></a>
+                  </div>
+                 
+                  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+                       otro elemento que se pueda ocultar al minimizar la barra -->
+                  <div class="collapse navbar-collapse navbar-ex1-collapse navSearch">
 
-	    <form class="nav navbar-form navbar-left" role="search">
-	      <div class="form-group">
-	        <input type="text" class="form-control nb-search" placeholder="Search...">
-	      </div>
-	      <button type="submit" class="btn btn-default nb-search-btnok">Search</button>
-	    </form>
-	 
-	    <ul class="nav navbar-nav navbar-right">
-	      <li><a href="#" class = "nb-link"><span class = "glyphicon glyphicon-list-alt"></span> My list</a></li>
-	      <li><a href="profile.html" class = "nb-link"><span class = "glyphicon glyphicon-user"></span> Profile</a></li>
-	      <li><a href="#" class = "nb-link"><span class = "glyphicon glyphicon-cog"></span> Configuration</a></li>
-	    </ul>
+                    <form class="nav navbar-form navbar-left" role="search">
+                      <div class="form-group input-group">
+                        <input type="text" class="form-control nb-search" placeholder="Search...">
+                          <span class="input-group-btn"><button type="submit" class="btn btn-danger nb-search-btnok search-btn"><span class="glyphicon glyphicon-search"></span></button></span>
 
-	  </div>
-	  </div>
-	</nav>
+                      </div>
+                      
+                    </form>
+                 
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#" class = "nb-link"><span class = "glyphicon glyphicon-list-alt"></span> My list</a></li>
+                      <li><a href="profile.html" class = "nb-link"><span class = "glyphicon glyphicon-user"></span> Profile</a></li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle nb-link" data-toggle="dropdown"><span class = "glyphicon glyphicon-cog"></span> Configuration</a>
+                          <ul class="dropdown-menu menusito">
+                      <li><a href="config.html"><span class = "glyphicon glyphicon-edit"></span> Edit profile</a></li>
+                      <li><a href="#"><span class = "glyphicon glyphicon-cog"></span> Account settings</a></li>
+                      <li><a href="#"><span class = "glyphicon glyphicon-log-out"></span> Log out</a></li>
+                    </ul>
+                      </li>
+                    </ul>
+
+                  </div>
+                  </div>
+      </nav>
+  </div>
 
 <!--CONTENIDO-->
-	<div class="container corcho">
+	<div class="row corcho">
 
 		<div class="PP col-lg-offset-1 col-md-offset-1 col-lg-2 col-md-2 col-sm-12 col-xs-12">
 			<div class = "PolaroidProfile">
@@ -73,10 +86,8 @@
 			<p class = "dsc col-lg-12 col-md-12 col-sm-12 col-xs-12" >Any description of the user. Like other groups or dramas he or she likes. Or maybe his o her feelings IDK! SOMETHING! HAHA.</p>
 		</div>
 
-		<div class = "likes col-lg-offset-4 col-md-offset-4 col-lg-4 col-md-4 col-sm-12 col-xs-12"">
-			<div class="letra">
-				<h3>MY FAVORITES</h3>
-			</div>
+		<div class = "likes text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <img src="img/my-favs.png" class="img-responsive text-center">
 		</div>
 
 		<div class = "like_GSDA col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -127,53 +138,52 @@
 	</div>
 	
 <!--FOOTER-->
-   <div class ="pie">
-           <center>
-                <div class = "container">
-
+ <div class ="row pie">
+        <div class = "container">
                  <div class = "col-lg-2 col-md-2 col-sm-12 col-sx-12 category">
-                 	<a href="#">CATEGORIES</a>
-                 	<hr>
-                 	<ul>
-                 		<li><a href="#">1 catego</a></li>
-                 		<li><a href="#">2 catego</a></li>
-                 		<li><a href="#">3 catego</a></li>
-                 		<li><a href="#">4 catego</a></li>
-                 	</ul>
-                 	<hr class= "lineaverse">
+                  <a href="#">CATEGORIES</a>
+                  <hr>
+                  <ul>
+                    <li><a href="#">1 catego</a></li>
+                    <li><a href="#">2 catego</a></li>
+                    <li><a href="#">3 catego</a></li>
+                    <li><a href="#">4 catego</a></li>
+                  </ul>
+                  <hr class= "lineaverse">
                  </div>
+
                  <div class = "col-lg-2 col-md-2 col-sm-12 col-sx-12 groups">
-                 	<a href="#">GROUPS</a>
-                 	<hr>
-                 	<ul>
-                 		<li><a href="#">Boys</a></li>
-                 		<li><a href="#">Girls</a></li>
-                 		<li><a href="#">Mixed</a></li>
-                 	</ul>
-                 	<hr class= "lineaverse">
+                  <a href="#">GROUPS</a>
+                  <hr>
+                  <ul>
+                    <li><a href="#">Boys</a></li>
+                    <li><a href="#">Girls</a></li>
+                    <li><a href="#">Mixed</a></li>
+                  </ul>
+                  <hr class= "lineaverse">
                  </div>
                  <div class = "col-lg-2 col-md-2 col-sm-12 col-sx-12 solos">
-                 	<a href="#">SOLOS</a>
-                 	<hr>
-                 	<ul>
-                 		<li><a href="#">Boys</a></li>
-                 		<li><a href="#">Girls</a></li>
-                 	</ul>
-                 	<hr class= "lineaverse">
+                  <a href="#">SOLOS</a>
+                  <hr>
+                  <ul>
+                    <li><a href="#">Boys</a></li>
+                    <li><a href="#">Girls</a></li>
+                  </ul>
+                  <hr class= "lineaverse">
                  </div>
                  <div class = "col-lg-6 col-md-6 col-sm-12 col-sx-12 contact">
-                 	<a href="#">CONTACT US</a>
-                 	<br>
-                 	<a href=""><img src="img/fbh.png" class="img1"></a>
-                 	<a href=""><img src="img/twit.png" class="img2"></a>
-                 	<a href=""><img src="img/u2h.png" class="img3"></a>
+                  <a href="#">CONTACT US</a>
+                  <br>
+                  <a href=""><img src="img/fbh.png" class="img1"></a>
+                  <a href=""><img src="img/twit.png" class="img2"></a>
+                  <a href=""><img src="img/u2h.png" class="img3"></a>
 
-                 	<P>COPYRIGHT 2017</P>
-                 </div>
-                
-                </div>
-            </center>
-    </div>
+                  <P>COPYRIGHT 2017</P>
+                </div>        
+        </div>
+ </div>
+
+ </div>
 
 </body>
 	<!--Jcueros y eso-->

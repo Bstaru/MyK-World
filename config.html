@@ -13,67 +13,127 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<!--Estilos-->	
-	<link href="css/config.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
+
+ <div class="container-fluid">
+
 <!--NAVBAR-->
-	<nav class="navbar nb-color" role="navigation">
-		<div class = "container">
-	  <!-- El logotipo y el icono que despliega el menú se agrupan
-	       para mostrarlos mejor en los dispositivos móviles -->
-	  <div class="navbar-header">
-	    <button type="button" class="navbar-toggle nb-btn-mini" data-toggle="collapse"
-	            data-target=".navbar-ex1-collapse">
-	      <span class="sr-only">More</span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </button>
-	    <a class="navbar-brand logotipo" href="start.html"><img src="img/planet.png" class = "logoNav"></a>
-	  </div>
-	 
-	  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
-	       otro elemento que se pueda ocultar al minimizar la barra -->
-	  <div class="collapse navbar-collapse navbar-ex1-collapse">
+ 	<div class="row">
+		<nav class="navbar nb-color" role="navigation">
+	            		<div class = "container">
+	            	  <!-- El logotipo y el icono que despliega el menú se agrupan
+	            	       para mostrarlos mejor en los dispositivos móviles -->
+	            	  <div class="navbar-header">
+	            	    <button type="button" class="navbar-toggle nb-btn-mini" data-toggle="collapse"
+	            	            data-target=".navbar-ex1-collapse">
+	            	      <span class="sr-only">More</span>
+	            	      <span class="icon-bar"></span>
+	            	      <span class="icon-bar"></span>
+	            	      <span class="icon-bar"></span>
+	            	    </button>
+	            	    <a class="navbar-brand logotipo" href="start.html"><img src="img/planet.png" class = "logoNav"></a>
+	            	  </div>
+	            	 
+	            	  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+	            	       otro elemento que se pueda ocultar al minimizar la barra -->
+	            	  <div class="collapse navbar-collapse navbar-ex1-collapse navSearch">
 
-	    <form class="nav navbar-form navbar-left" role="search">
-	      <div class="form-group">
-	        <input type="text" class="form-control nb-search" placeholder="Search...">
-	      </div>
-	      <button type="submit" class="btn btn-default nb-search-btnok">Search</button>
-	    </form>
-	 
-	    <ul class="nav navbar-nav navbar-right">
-	      <li><a href="#" class = "nb-link"><span class = "glyphicon glyphicon-list-alt"></span> My list</a></li>
-	      <li><a href="profile.html" class = "nb-link"><span class = "glyphicon glyphicon-user"></span> Profile</a></li>
-	      <li><a href="#" class = "nb-link"><span class = "glyphicon glyphicon-cog"></span> Configuration</a></li>
-	    </ul>
+	            	    <form class="nav navbar-form navbar-left" role="search">
+	            	      <div class="form-group input-group">
+	            	        <input type="text" class="form-control nb-search" placeholder="Search...">
+	                        <span class="input-group-btn"><button type="submit" class="btn btn-danger nb-search-btnok search-btn"><span class="glyphicon glyphicon-search"></span></button></span>
 
-	  </div>
-	  </div>
-	</nav>
+	            	      </div>
+	            	      
+	            	    </form>
+	            	 
+	            	    <ul class="nav navbar-nav navbar-right">
+	            	      <li><a href="#" class = "nb-link"><span class = "glyphicon glyphicon-list-alt"></span> My list</a></li>
+	            	      <li><a href="profile.html" class = "nb-link"><span class = "glyphicon glyphicon-user"></span> Profile</a></li>
+	            	      <li class="dropdown"><a href="#" class="dropdown-toggle nb-link" data-toggle="dropdown"><span class = "glyphicon glyphicon-cog"></span> Configuration</a>
+	            	      		<ul class="dropdown-menu menusito">
+						          <li><a href="config.html"><span class = "glyphicon glyphicon-edit"></span> Edit profile</a></li>
+						          <li><a href="#"><span class = "glyphicon glyphicon-cog"></span> Account settings</a></li>
+						          <li><a href="#"><span class = "glyphicon glyphicon-log-out"></span> Log out</a></li>
+						        </ul>
+	            	      </li>
+	            	    </ul>
 
-<div class="container config">
-	<div class="listita">
-		<ul>
-			<li>Nombre: <input type="text" name=""></li>
-			<li>JJJ</li>
-			<li>JJJ</li>
-			<li>JJJ</li>
-			<li>JJJ</li>
-			<li>JJJ</li>
-			<li>JJJ</li>
-		</ul>
+	            	  </div>
+	            	  </div>
+	    </nav>
 	</div>
-</div>
+<!--CONTENIDO-->
+	<div class="row config">
+		<div class="text-center">
+			<form class="form-horizontal formu-edit text-center">
+
+				<div class="form-group">
+	                <label for="input1" class="col-sm-offset-1 col-sm-3 control-label descE">Username</label>
+	                <div class="col-sm-5">
+	                    <input type="text" class="form-control  textE" id="input1" placeholder="Username">
+	                </div>
+	            </div>
+
+	            <div class="form-group">
+	                <label for="input2" class="col-sm-offset-1 col-sm-3 control-label descE">Email</label>
+	                <div class="col-sm-5">
+	                    <input type="text" class="form-control  textE" id="input2" placeholder="Email">
+	                </div>
+	            </div>
+
+	            <div class="form-group">
+	                <label for="input3" class="col-sm-offset-1 col-sm-3 control-label descE">Password</label>
+	                <div class="col-sm-5">
+	                    <input type="text" class="form-control  textE" id="input3" placeholder="Password">
+	                </div>
+	            </div>
+
+	            <div class="form-group">
+	                <label for="input4" class="col-sm-offset-1 col-sm-3 control-label descE">Name</label>
+	                <div class="col-sm-5">
+	                    <input type="text" class="form-control  textE" id="input4" placeholder="Name">
+	                </div>
+	            </div>
+
+	            <div class="form-group">
+	                <label for="input5" class="col-sm-offset-1 col-sm-3 control-label descE">Lastname</label>
+	                <div class="col-sm-5">
+	                    <input type="text" class="form-control  textE" id="input5" placeholder="Lastname">
+	                </div>
+	            </div>
+
+	            <div class="form-group">
+	                <label for="input6" class="col-sm-offset-1 col-sm-3 control-label descE">Birthday</label>
+	                <div class="col-sm-5">
+	                    <input type="date" class="form-control  textE" id="input6" placeholder="Birthday">
+	                </div>
+	            </div> 
+
+	            <div class="form-group">
+				  <label class="col-sm-offset-1 col-sm-3 control-label  descE" for="selectbasic">Gender</label>
+				  <div class="col-sm-5">
+				    <select id="selectbasic" name="selectbasic" class="form-control textE">
+				      <option value="1">Female</option>
+				      <option value="2">Male</option>
+				      <option value="3">Other</option>
+				    </select>
+				  </div>
+				</div>
+
+
+				<input type="button" name="OkEdit" value="Save" class="OkEdit">
+			</form>
+		</div>
+	</div>
 
 <!--FOOTER-->
-   <div class ="pie">
-           <center>
-                <div class = "container">
-
+   <div class ="row pie">
+        <div class = "container">
                  <div class = "col-lg-2 col-md-2 col-sm-12 col-sx-12 category">
                  	<a href="#">CATEGORIES</a>
                  	<hr>
@@ -85,6 +145,7 @@
                  	</ul>
                  	<hr class= "lineaverse">
                  </div>
+
                  <div class = "col-lg-2 col-md-2 col-sm-12 col-sx-12 groups">
                  	<a href="#">GROUPS</a>
                  	<hr>
@@ -112,11 +173,11 @@
                  	<a href=""><img src="img/u2h.png" class="img3"></a>
 
                  	<P>COPYRIGHT 2017</P>
-                 </div>
-                
-                </div>
-            </center>
+                </div>        
+        </div>
     </div>
+
+ </div>
 
 </body>
 	<!--Jcueros y eso-->

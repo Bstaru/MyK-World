@@ -13,59 +13,63 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<!--Estilos-->	
-	<link href="css/profile.css" rel="stylesheet">
-    <link href="css/start.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
+
 <!--NAVBAR-->
     <div class="container-fluid">
 
-            <div class="row">
-            	<nav class="navbar nb-color" role="navigation">
-            		<div class = "container">
-            	  <!-- El logotipo y el icono que despliega el menú se agrupan
-            	       para mostrarlos mejor en los dispositivos móviles -->
-            	  <div class="navbar-header">
-            	    <button type="button" class="navbar-toggle nb-btn-mini" data-toggle="collapse"
-            	            data-target=".navbar-ex1-collapse">
-            	      <span class="sr-only">More</span>
-            	      <span class="icon-bar"></span>
-            	      <span class="icon-bar"></span>
-            	      <span class="icon-bar"></span>
-            	    </button>
-            	    <a class="navbar-brand logotipo" href="#"><img src="img/planet.png" class = "logoNav"></a>
-            	  </div>
-            	 
-            	  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
-            	       otro elemento que se pueda ocultar al minimizar la barra -->
-            	  <div class="collapse navbar-collapse navbar-ex1-collapse navSearch">
+          <div class="row">
+            	
+              <nav class="navbar nb-color" role="navigation">
+                    <div class = "container">
+                  <!-- El logotipo y el icono que despliega el menú se agrupan
+                       para mostrarlos mejor en los dispositivos móviles -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle nb-btn-mini" data-toggle="collapse"
+                            data-target=".navbar-ex1-collapse">
+                      <span class="sr-only">More</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logotipo" href="start.html"><img src="img/planet.png" class = "logoNav"></a>
+                  </div>
+                 
+                  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+                       otro elemento que se pueda ocultar al minimizar la barra -->
+                  <div class="collapse navbar-collapse navbar-ex1-collapse navSearch">
 
-            	    <form class="nav navbar-form navbar-left" role="search">
-            	      <div class="form-group input-group">
-            	        <input type="text" class="form-control nb-search" placeholder="Search...">
+                    <form class="nav navbar-form navbar-left" role="search">
+                      <div class="form-group input-group">
+                        <input type="text" class="form-control nb-search" placeholder="Search...">
                         <span class="input-group-btn"><button type="submit" class="btn btn-danger nb-search-btnok search-btn"><span class="glyphicon glyphicon-search"></span></button></span>
 
-            	      </div>
-            	      
-            	    </form>
-            	 
-            	    <ul class="nav navbar-nav navbar-right">
-            	      <li><a href="#" class = "nb-link"><span class = "glyphicon glyphicon-list-alt"></span> My list</a></li>
-            	      <li><a href="#" class = "nb-link"><span class = "glyphicon glyphicon-user"></span> Profile</a></li>
-            	      <li><a href="#" class = "nb-link"><span class = "glyphicon glyphicon-cog"></span> Configuration</a></li>
-            	    </ul>
+                      </div>
+                      
+                    </form>
+                 
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#" class = "nb-link"><span class = "glyphicon glyphicon-list-alt"></span> My list</a></li>
+                      <li><a href="profile.html" class = "nb-link"><span class = "glyphicon glyphicon-user"></span> Profile</a></li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle nb-link" data-toggle="dropdown"><span class = "glyphicon glyphicon-cog"></span> Configuration</a>
+                            <ul class="dropdown-menu menusito">
+                              <li><a href="config.html"><span class = "glyphicon glyphicon-edit"></span> Edit profile</a></li>
+                              <li><a href="#"><span class = "glyphicon glyphicon-cog"></span> Account settings</a></li>
+                              <li><a href="#"><span class = "glyphicon glyphicon-log-out"></span> Log out</a></li>
+                            </ul>
+                      </li>
+                    </ul>
 
-            	  </div>
-            	  </div>
-            	</nav>
-            </div>
+                  </div>
+                  </div>
+              </nav>
+          </div>
 
-
-
-
-    <!--CAROUSEL-->
+<!--CAROUSEL-->
         <div class="row carouselBoard ">
 
                 <div class="col-md-10 col-sm-10 carouselPanel"  >
@@ -123,11 +127,6 @@
                       </a>
                       </div>
                 </div>
-                 
-
-
-              
-
 
                  <div class="col-md-2 col-sm-2 carouselMenu ">
 
@@ -139,15 +138,13 @@
                           <li><a href="#">Must see</a></li>
                         </ul>
                 </div>
-
          </div>
 
          <div class="row">
             <div class="col-md-12 col-sm-12 separator "><br><br></div>
              
          </div>
-       
-<br>
+     <br>
     
         <div class=" row newsBoard  ">
 
@@ -224,14 +221,10 @@
      <br>
 
 
-    <!--FOOTER-->
+<!--FOOTER-->
     
-           <div class ="row pie">
-           
-                   <center>
-
-                       
-
+        <div class ="row pie">                     
+              <div class = "container">
                          <div class = "col-lg-2 col-md-2 col-sm-12 col-sx-12 category">
                          	<a href="#">CATEGORIES</a>
                          	<hr>
@@ -271,11 +264,9 @@
 
                          	<P>COPYRIGHT 2017</P>
                          </div>
-                        
+         </div>
                     
-                    </center>
-                    
-            </div>
+        </div>
            
     </div>
 
