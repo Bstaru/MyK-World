@@ -22,6 +22,7 @@ Colores:
 		list-style: none;
 		margin: 0; padding: 0;
 	}
+
 /*NAVBAR*/
 	.nb-btn-mini{
 		background-color: #bf2c50;
@@ -62,7 +63,7 @@ Colores:
 	background-image: url('../img/corcho.png');
 	border: 10px solid #959498;
 	margin: 20px auto;
-}
+	}
 	.PP{
 		-webkit-transform: rotate(352deg);
     	transform: rotate(352deg);

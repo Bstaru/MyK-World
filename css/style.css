@@ -10,7 +10,8 @@ Colores:
 
 /*GENERALES*/
 	body{
-		background-color:#f6e6cb; 
+		background-color:#f6e6cb;
+		overflow-x: hidden;
 	}
 	body,input, h1, h2, h3, h4, h5, select, p, a{
 		font-family: 'Lato', sans-serif;
@@ -24,16 +25,17 @@ Colores:
 	}
 
 
-/*-------------------------------------------NAVBAR---------------------------------------------------*/
+/*--------------------------------------------NAVBAR--------------------------------------------------*/
 	.navbar{
 		background-color: white;
 		box-shadow: 3px 3px 3px #E7E7E7;
 		color:gray;
 	}
-	.nb-link,.nb-link:hover{
-	    font-size: 12pt;
+	.nb-link,.nb-link:hover, .menusito{
+	    font-size: 14pt;
 	    color:#94093b;
 	}
+	.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{background-color: #eee;border-color: #94093b;}
 	.navbar .search-btn{background-color: #E7E7E7;}
 	.navbar .search-btn:hover{background-color: #991c43;}
 	.nb-search{
@@ -100,7 +102,7 @@ Colores:
 
 	.nav-stacked > li + li{margin:0px;}
 
-	.carouselMenu a{color: white; font: normal normal 14px Verdana, sans-serif; 	min-height: 100%; padding: 20%;}
+	.carouselMenu a{color: white; font: normal normal 14px Verdana, sans-serif;min-height: 100%; padding: 20%;}
 
 	.carouselMenu li.active a, .carouselMenu li.active a:focus{ background-color:#991c43;}
 
@@ -150,5 +152,279 @@ Colores:
 	}
 
 /*------------------------------------------ PROFILE--------------------------------------------------*/
+	.corcho{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('../img/corcho.png');
+	border: 10px solid #959498;
+	margin: 20px 8%;
+	}
+	.PP{
+		-webkit-transform: rotate(352deg);
+    	transform: rotate(352deg);
+    	z-index: 103;
+    	margin-top: 3%;
+    	box-shadow:18px 11px 15px rgba(0,0,0,.5);
+		}
+		.PolaroidProfile{
+			height: 270px; width: 255px;
+			background-color: #f4f4f4;
+			margin: 0 auto;
+			}
+			.PolaroidProfile img{
+				margin: 20px;
+				height: 220px; width: 215px;
+			}
+		.NameProfile{
+			height:50px; width: 255px;		
+			background-color: #f4f4f4;
+			margin: -1px auto 0 auto;
+			}
+			.NameProfile h4{
+				margin: 0;
+				text-align: center;
+				color: black;
+				font-size: 25pt;
+			}
+	.note{
+		padding: 15px;
+    	margin-top: 3%;
+    	background-size: cover;
+		background-repeat: no-repeat;
+    	background-image: url('../img/note.png');
+		}
+		.name{
+			padding: 10% 0 0 19%;
+			z-index: 101;
+			display: block;
+			font-size: 17pt;
+		}
+		.bd{
+			padding: 2% 0 0 19%;
+			z-index: 101;
+			display: block;
+			font-size: 17pt;
+		}
+		.dsc{
+			padding: 2% 0 0 19%;
+			z-index: 101;
+			display: block;
+			font-size: 17pt;
+		}
+	.likes{
+		display: inline-block;
+		border-radius: 10px;
+		margin-top: 3%;
+		}
+	.likes img {
+		display: block; margin: 0 auto;
+		height: 113px; width: 300px;
+	}
+	.cinta{
+		z-index: 105;
+		margin: 0 auto;
+		height: 50px; width: 60px;
+		}
+		.cinta img{
+			z-index: 105;
+			height: 75px; width: 75px;
+		}
+	.like_GSDA{
+		margin: 5% auto;
+		}
+		.like_G,.like_S,.like_D,.like_A{
+			z-index: 101;
+			margin: 0;
+		}
+		.PhotoG, .PhotoS, .PhotoD, .PhotoA{
+			z-index: 101;
+			background-color: #f4f4f4;
+			}
+			.PhotoG img,
+			.PhotoS img,
+			.PhotoD img,
+			.PhotoA img{
+				z-index: 101;
+				margin:  0 auto;
+				padding: 20px 0 ;
+				width: 200px;
+			}
+		.NameG, .NameS,.NameD,.NameA{
+			height:50px;		
+			background-color: #f4f4f4;
+			margin: -1px auto 0 auto;
+			}
+			.NameG h4,
+			.NameS h4,
+			.NameD h4,
+			.NameA h4{
+				margin: 0;
+				text-align: center;
+				color: black;
+				font-size: 20pt;
+			}
+	/*RESPONSIVA*/
+	@media (max-width: 1020px) {
+		.corcho{
+			background-image: none;
+			background-color: #bf2c50;
+			border: none;
+		}
+		/*polaroid perfil*/
+			.PP{
+			-webkit-transform: rotate(0deg);
+	    	transform: rotate(0deg);
+			padding: 0px;
+	    	box-shadow: none;
+	    	z-index: 100;
+		}
+			.PolaroidProfile{
+				height: 200px; width: 200px;
+				}
+				.PolaroidProfile img{
+					height: 160px; width: 160px;
+				}
+			.NameProfile{
+				height:40px;
+				width: 200px;	
+			}
+				.NameProfile h4{
+					font-size: 20pt;
+				}
 
+		.note{
+			background-color: #ae1f42;
+			background-image: none;
+			color: white;
+			z-index: 100;
+			padding:0;
+			}
+			.name, .bd, .dsc{
+				padding: 0.5%;
+				font-size: 13pt;
+				text-align: center;
+			}
 
+		.cinta{
+			display: none;
+		}
+		/*footer*/
+			.nb-link{
+				font-size: 13pt;
+			}
+			.category, .groups, .solos, .contact{
+			text-align: center;
+			}
+			.lineaverse{
+		 	display: inline;
+		 }
+
+		 	.PhotoG, .PhotoS, .PhotoD, .PhotoA{
+				background-color: #ae1f42;
+			}
+			.NameG, .NameS,.NameD,.NameA{
+			height:35px;		
+			background-color:  #ae1f42;
+			}
+			.NameG h4,
+			.NameS h4,
+			.NameD h4,
+			.NameA h4{
+				text-align: center;
+				color: white;
+				font-size: 15pt;
+			}
+
+	}
+
+/*------------------------------------------- ARTIST--------------------------------------------------*/
+	.elart{
+		background-color: #991c43;
+		margin-bottom: 20px;
+		}
+	.smolbio{
+		background-color: white;
+		border-radius: 30px;
+		text-align: center;
+		font-size: 25px;
+		color: black;
+		}
+	.foto{
+		}
+		.foto img{
+			height: 250px; width: 250px;
+			display: block;
+			margin: 0 auto;
+		}
+		.foto h4{
+			color: white;
+			text-align: center;
+			font-size: 20pt;
+		}
+
+	.descrip, .follow{
+		padding: 15px;
+		
+		}
+		.descrip ul{	
+			color: white;
+			font-size: 15pt;
+		}
+	.follow img{
+		display: inline-block;
+		height: 50px; width: 50px;
+		margin-right: 5px;
+		}
+	.follow a{
+		color: white;
+		text-decoration: none;
+		font-size: 15pt;
+		margin: 10px;
+		}
+	.mas{
+		color: white;
+		font-size: 20pt;
+		}
+	.mas ul{
+			color: white;
+			font-size: 13pt;
+			margin-top: 15px;
+			}
+			.mas li{
+				margin: 15px;
+				}	
+			.pabajo{
+				cursor: pointer;
+				margin-top: 2px;
+				margin-right: 1%;
+				float: right;
+				color: black
+				}
+
+/*------------------------------------------- CONFIG--------------------------------------------------*/
+	.config{
+		background-color: #991c43;
+		margin: 20px auto;
+		}
+	.descE{
+		font-size: 16pt;			
+		color: white;
+		}
+	.textE{
+		margin-top: 5px; 
+		font-size: 16pt;			
+		color: black;
+		border: none;
+		border-radius: 30px;
+		}
+
+	.OkEdit{
+		width: 100px;
+		height: 40px;
+		margin: 15px;
+		background-color: #bf2c50;
+		border:2px solid #fff;
+		border-radius: 30px;
+		color: white;
+		font-size: 15pt;
+			}
