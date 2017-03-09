@@ -15,6 +15,7 @@
 	<!--Estilos-->	
 	<link href="css/style.css" rel="stylesheet">
 
+	<script type="text/javascript" src = "js/verFoto.js"></script>
 </head>
 
 <body>
@@ -22,76 +23,69 @@
  <div class="container-fluid">
 
 <!--NAVBAR-->
- 	<div class="row">
-		<nav class="navbar nb-color" role="navigation">
-	            		<div class = "container">
-	            	  <!-- El logotipo y el icono que despliega el menú se agrupan
-	            	       para mostrarlos mejor en los dispositivos móviles -->
-	            	  <div class="navbar-header">
-	            	    <button type="button" class="navbar-toggle nb-btn-mini" data-toggle="collapse"
-	            	            data-target=".navbar-ex1-collapse">
-	            	      <span class="sr-only">More</span>
-	            	      <span class="icon-bar"></span>
-	            	      <span class="icon-bar"></span>
-	            	      <span class="icon-bar"></span>
-	            	    </button>
-	            	    <a class="navbar-brand logotipo" href="start.html"><img src="img/planet.png" class = "logoNav"></a>
-	            	  </div>
-	            	 
-	            	  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
-	            	       otro elemento que se pueda ocultar al minimizar la barra -->
-	            	  <div class="collapse navbar-collapse navbar-ex1-collapse navSearch">
+  <div class="row">
+    <nav class="navbar nb-color" role="navigation">
+                  <div class = "container">
+                  <!-- El logotipo y el icono que despliega el menú se agrupan
+                       para mostrarlos mejor en los dispositivos móviles -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle nb-btn-mini" data-toggle="collapse"
+                            data-target=".navbar-ex1-collapse">
+                      <span class="sr-only">More</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logotipo" href="start.html"><img src="img/planet.png" class = "logoNav"></a>
+                  </div>
+                 
+                  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+                       otro elemento que se pueda ocultar al minimizar la barra -->
+                  <div class="collapse navbar-collapse navbar-ex1-collapse navSearch">
 
-	            	    <form class="nav navbar-form navbar-left" role="search">
-	            	      <div class="form-group input-group">
-	            	        <input type="text" class="form-control nb-search" placeholder="Search...">
-	                        <span class="input-group-btn"><button type="submit" class="btn btn-danger nb-search-btnok search-btn"><span class="glyphicon glyphicon-search"></span></button></span>
+                    <form class="nav navbar-form navbar-left" role="search">
+                      <div class="form-group input-group">
+                        <input type="text" class="form-control nb-search" placeholder="Search...">
+                          <span class="input-group-btn"><button type="submit" class="btn btn-danger nb-search-btnok search-btn"><span class="glyphicon glyphicon-search"></span></button></span>
 
-	            	      </div>
-	            	      
-	            	    </form>
-	            	 
-	            	    <ul class="nav navbar-nav navbar-right">
-	            	      <li><a href="#" class = "nb-link"><span class = "glyphicon glyphicon-list-alt"></span> My list</a></li>
-	            	      <li><a href="profile.html" class = "nb-link"><span class = "glyphicon glyphicon-user"></span> Profile</a></li>
-	            	      <li class="dropdown"><a href="#" class="dropdown-toggle nb-link" data-toggle="dropdown"><span class = "glyphicon glyphicon-cog"></span> Configuration</a>
-	            	      		<ul class="dropdown-menu menusito">
-						          <li><a href="config.html"><span class = "glyphicon glyphicon-edit"></span> Edit profile</a></li>
-						          <li><a href="#"><span class = "glyphicon glyphicon-cog"></span> Account settings</a></li>
-						          <li><a href="#"><span class = "glyphicon glyphicon-log-out"></span> Log out</a></li>
-						        </ul>
-	            	      </li>
-	            	    </ul>
+                      </div>
+                      
+                    </form>
+                 
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#" class = "nb-link"><span class = "glyphicon glyphicon-list-alt"></span> My list</a></li>
+                      <li><a href="profile.html" class = "nb-link"><span class = "glyphicon glyphicon-user"></span> Profile</a></li>
+                      <li class="dropdown"><a href="#" class="dropdown-toggle nb-link" data-toggle="dropdown"><span class = "glyphicon glyphicon-cog"></span> Configuration</a>
+                          <ul class="dropdown-menu menusito">
+                      <li><a href="config.html"><span class = "glyphicon glyphicon-edit"></span> Edit profile</a></li>
+                      <li><a href="#"><span class = "glyphicon glyphicon-cog"></span> Account settings</a></li>
+                      <li><a href="#"><span class = "glyphicon glyphicon-log-out"></span> Log out</a></li>
+                    </ul>
+                      </li>
+                    </ul>
 
-	            	  </div>
-	            	  </div>
-	    </nav>
-	</div>
+                  </div>
+                  </div>
+      </nav>
+  </div>
+
 <!--CONTENIDO-->
+
 	<div class="row config">
-		<div class="text-center">
-			<form class="form-horizontal formu-edit text-center">
 
-				<div class="form-group">
-	                <label for="input1" class="col-sm-offset-1 col-sm-3 control-label descE">Username</label>
-	                <div class="col-sm-5">
-	                    <input type="text" class="form-control  textE" id="input1" placeholder="Username">
-	                </div>
-	            </div>
+		<div class="tittle-edt">Change your profile information</div>
 
-	            <div class="form-group">
-	                <label for="input2" class="col-sm-offset-1 col-sm-3 control-label descE">Email</label>
-	                <div class="col-sm-5">
-	                    <input type="text" class="form-control  textE" id="input2" placeholder="Email">
-	                </div>
-	            </div>
+		<form class="form-horizontal formu-edit text-center">				
 
-	            <div class="form-group">
-	                <label for="input3" class="col-sm-offset-1 col-sm-3 control-label descE">Password</label>
-	                <div class="col-sm-5">
-	                    <input type="text" class="form-control  textE" id="input3" placeholder="Password">
-	                </div>
-	            </div>
+				<div class="justclick">
+					  <img src="img/justclick.png"/>
+				</div>
+				<div class = "fotito">
+						<div class="uploader" onclick="$('#filePhoto').click()">
+						    <img src="img/default.png"/>
+						    <input type="file" name="userprofile_picture"  id="filePhoto" />
+						</div>
+				</div>
 
 	            <div class="form-group">
 	                <label for="input4" class="col-sm-offset-1 col-sm-3 control-label descE">Name</label>
@@ -124,62 +118,63 @@
 				    </select>
 				  </div>
 				</div>
-
-
+				
 				<input type="button" name="OkEdit" value="Save" class="OkEdit">
-			</form>
-		</div>
+		</form>
+	
 	</div>
 
 <!--FOOTER-->
-   <div class ="row pie">
+ <div class ="row pie">
         <div class = "container">
                  <div class = "col-lg-2 col-md-2 col-sm-12 col-sx-12 category">
-                 	<a href="#">CATEGORIES</a>
-                 	<hr>
-                 	<ul>
-                 		<li><a href="#">1 catego</a></li>
-                 		<li><a href="#">2 catego</a></li>
-                 		<li><a href="#">3 catego</a></li>
-                 		<li><a href="#">4 catego</a></li>
-                 	</ul>
-                 	<hr class= "lineaverse">
+                  <a href="#">CATEGORIES</a>
+                  <hr>
+                  <ul>
+                    <li><a href="#">1 catego</a></li>
+                    <li><a href="#">2 catego</a></li>
+                    <li><a href="#">3 catego</a></li>
+                    <li><a href="#">4 catego</a></li>
+                  </ul>
+                  <hr class= "lineaverse">
                  </div>
 
                  <div class = "col-lg-2 col-md-2 col-sm-12 col-sx-12 groups">
-                 	<a href="#">GROUPS</a>
-                 	<hr>
-                 	<ul>
-                 		<li><a href="#">Boys</a></li>
-                 		<li><a href="#">Girls</a></li>
-                 		<li><a href="#">Mixed</a></li>
-                 	</ul>
-                 	<hr class= "lineaverse">
+                  <a href="#">GROUPS</a>
+                  <hr>
+                  <ul>
+                    <li><a href="#">Boys</a></li>
+                    <li><a href="#">Girls</a></li>
+                    <li><a href="#">Mixed</a></li>
+                  </ul>
+                  <hr class= "lineaverse">
                  </div>
                  <div class = "col-lg-2 col-md-2 col-sm-12 col-sx-12 solos">
-                 	<a href="#">SOLOS</a>
-                 	<hr>
-                 	<ul>
-                 		<li><a href="#">Boys</a></li>
-                 		<li><a href="#">Girls</a></li>
-                 	</ul>
-                 	<hr class= "lineaverse">
+                  <a href="#">SOLOS</a>
+                  <hr>
+                  <ul>
+                    <li><a href="#">Boys</a></li>
+                    <li><a href="#">Girls</a></li>
+                  </ul>
+                  <hr class= "lineaverse">
                  </div>
                  <div class = "col-lg-6 col-md-6 col-sm-12 col-sx-12 contact">
-                 	<a href="#">CONTACT US</a>
-                 	<br>
-                 	<a href=""><img src="img/fbh.png" class="img1"></a>
-                 	<a href=""><img src="img/twit.png" class="img2"></a>
-                 	<a href=""><img src="img/u2h.png" class="img3"></a>
+                  <a href="#">CONTACT US</a>
+                  <br>
+                  <a href=""><img src="img/fbh.png" class="img1"></a>
+                  <a href=""><img src="img/twit.png" class="img2"></a>
+                  <a href=""><img src="img/u2h.png" class="img3"></a>
 
-                 	<P>COPYRIGHT 2017</P>
+                  <P>COPYRIGHT 2017</P>
                 </div>        
         </div>
-    </div>
+ </div>
 
  </div>
+
 
 </body>
 	<!--Jcueros y eso-->
 	<script type="text/javascript" src = "js/bootstrap.js"></script>
+	<script type="text/javascript" src = "js/verFoto.js"></script>
 </html>

@@ -219,7 +219,8 @@ Colores:
 	.likes img {
 		display: block; margin: 0 auto;
 		height: 113px; width: 300px;
-	}
+		}
+
 	.cinta{
 		z-index: 105;
 		margin: 0 auto;
@@ -340,7 +341,9 @@ Colores:
 /*------------------------------------------- ARTIST--------------------------------------------------*/
 	.elart{
 		background-color: #991c43;
-		margin-bottom: 20px;
+		margin: 20px 8%;
+		border-radius: 30px;
+		padding: 20px;
 		}
 	.smolbio{
 		background-color: white;
@@ -348,42 +351,58 @@ Colores:
 		text-align: center;
 		font-size: 25px;
 		color: black;
+		margin: 5px;
 		}
+
 	.foto{
+		margin: 15px auto;
 		}
 		.foto img{
-			height: 250px; width: 250px;
+			height: 270px; width: 270px;
 			display: block;
 			margin: 0 auto;
-		}
+			}
 		.foto h4{
 			color: white;
 			text-align: center;
 			font-size: 20pt;
-		}
+			}
 
 	.descrip, .follow{
-		padding: 15px;
-		
+		padding: 20px;
 		}
-		.descrip ul{	
+	.descrip ul{	
 			color: white;
 			font-size: 15pt;
+			margin: 15px auto;
 		}
-	.follow img{
-		display: inline-block;
-		height: 50px; width: 50px;
-		margin-right: 5px;
+	.fol1:hover, 
+	.fol2:hover{
+		text-shadow: 0 0 15px #FFFFFF;
+		transform: scale(1.05);
 		}
-	.follow a{
-		color: white;
-		text-decoration: none;
-		font-size: 15pt;
-		margin: 10px;
+	.fol1,.fol2{
+		margin-bottom: 20px;
 		}
+		.follow img{
+			display: inline-block;
+			height: 50px; width: 50px;
+			margin-right: 5px;
+			}
+		.follow a{
+			color: white;
+			text-decoration: none;
+			font-size: 15pt;
+			margin: 10px;
+			}
 	.mas{
 		color: white;
 		font-size: 20pt;
+		}
+	.mas p{		
+			color: white;
+			font-size: 15pt;
+			margin: 1%;
 		}
 	.mas ul{
 			color: white;
@@ -391,7 +410,7 @@ Colores:
 			margin-top: 15px;
 			}
 			.mas li{
-				margin: 15px;
+				margin: 20px;
 				}	
 			.pabajo{
 				cursor: pointer;
@@ -404,20 +423,75 @@ Colores:
 /*------------------------------------------- CONFIG--------------------------------------------------*/
 	.config{
 		background-color: #991c43;
-		margin: 20px auto;
+		margin: 20px 8%;
+		border-radius: 30px;
 		}
+
+	.tittle-edt{
+		background-color: white;
+		border-radius: 30px;
+		text-align: center;
+		font-size: 25px;
+		color: black;
+		margin: 1.5% auto;
+		width: 50%;
+		}
+	.justclick{
+		position: absolute;
+		left: 58%;
+		}
+		.justclick img{height: 106px; width: 150px;}
+	.fotito{
+		height: 250px;
+		width: 250px;
+		margin: 15px auto;
+		}		
+			.uploader {
+				position:relative;
+				top: 0;
+			    left: 0; 
+			    right: 0;
+			    bottom: 0; 
+				overflow:hidden; 
+				height: 250px;
+				width: 250px;
+				background:transparent; 
+				border:5px dashed white;
+				border-radius: 130px;
+			}
+
+			#filePhoto{
+			    position:absolute;
+			    width:250px;
+			    height:250px;
+			    top:0;
+			    left:0;
+			    z-index:2;
+			    opacity:0;
+			    cursor:pointer;
+				border-radius: 130px;
+			}
+			.uploader img{
+			    position:absolute;
+			    width:250px;
+			    height:250px;
+			    top: 0;
+			    left: 0;
+			    z-index:1;
+			    border:none;
+				border-radius: 130px;
+			}
 	.descE{
 		font-size: 16pt;			
 		color: white;
 		}
 	.textE{
-		margin-top: 5px; 
+		margin: 5px auto; 
 		font-size: 16pt;			
 		color: black;
 		border: none;
 		border-radius: 30px;
 		}
-
 	.OkEdit{
 		width: 100px;
 		height: 40px;
