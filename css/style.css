@@ -24,7 +24,6 @@ Colores:
 		margin: 0; padding: 0;
 	}
 
-
 /*--------------------------------------------NAVBAR--------------------------------------------------*/
 	.navbar{
 		background-color: white;
@@ -420,7 +419,7 @@ Colores:
 				color: black
 				}
 
-/*------------------------------------------- CONFIG--------------------------------------------------*/
+/*----------------------------------- CONFIG-PROFILE--------------------------------------------------*/
 	.config{
 		background-color: #991c43;
 		margin: 20px 8%;
@@ -502,3 +501,75 @@ Colores:
 		color: white;
 		font-size: 15pt;
 			}
+
+/*----------------------------------- CONFIG-ACCOUNT--------------------------------------------------*/
+	.cmn-toggle {
+	  position: absolute;
+	  visibility: hidden;
+	}
+	.cmn-toggle + label {
+	  display: block;
+	  position: relative;
+	  cursor: pointer;
+	  outline: none;
+	  user-select: none;
+	}
+	.switch{
+		margin: 0 auto;
+		}
+		.coso{
+			margin: 10px auto 0 5px;
+		}
+		.switch input.cmn-toggle-round-flat + label {
+		  padding: 2px;
+		  width: 50px;
+		  height: 30px;
+		  background-color: #dddddd;
+		  border-radius: 60px;
+		  transition: background 0.4s;
+		}
+		.switch input.cmn-toggle-round-flat + label:before,
+		.switch input.cmn-toggle-round-flat + label:after {
+		  display: block;
+		  position: absolute;
+		  content: "";
+		}
+		.switch input.cmn-toggle-round-flat + label:before {
+		  top: 2px;
+		  left: 2px;
+		  bottom: 2px;
+		  right: 2px;
+		  background-color: #fff;
+		  border-radius: 60px;
+		  transition: background 0.4s;
+		}
+		.switch input.cmn-toggle-round-flat + label:after {
+		  top: 4px;
+		  left: 4px;
+		  bottom: 4px;
+		  width: 20px;
+		  background-color: #dddddd;
+		  border-radius: 52px;
+		  transition: margin 0.4s, background 0.4s;
+		}
+		.switch input.cmn-toggle-round-flat:checked + label {
+		  background-color: #ae1f42;
+		}
+		.switch input.cmn-toggle-round-flat:checked + label:after {
+		  margin-left: 20px;
+		  background-color: #ae1f42;
+		}
+	.lineaGG{
+		margin: 20px 10%;
+		border: 2px solid white;
+	}
+	.OkBye{
+			width: 100px;
+			height: 40px;
+			margin: 5px auto 0 5px;
+			background-color: #bf2c50;
+			border:2px solid #fff;
+			border-radius: 30px;
+			color: white;
+			font-size: 15pt;
+				}
