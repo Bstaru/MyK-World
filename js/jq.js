@@ -31,6 +31,25 @@ $(".btn").click(function() {
 
 						/*currPanel.hide();*/
 
+						if(currPanel.hasClass("landPanel-4")){
+
+
+							
+
+							panel1.show();
+						
+
+					currPanel.slideUp( "slow", function() {
+						 
+						    
+						  });
+
+						}
+
+						else{
+
+
+
 						 currPanel.next().show();
 						
 
@@ -38,6 +57,7 @@ $(".btn").click(function() {
 						 
 						    
 						  });
+				}
 					
 
 						
