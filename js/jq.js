@@ -14,71 +14,27 @@ $(document).ready(function(){
   var panels =$(".Landpage-item");
 
 
-
-
   $(".Landpage-item").hide();
   $(".btn-index").hide();
 
    panel1.show();
 
-
-
-
-
-$(".btn-nextPanel").click(function() {
-	/*this.stop().animate({scrollTop:0}, '500', 'swing', function() { 
-
-
-						});*/
-
-						var currPanel=$(this).parent();
-
-						/*currPanel.hide();*/
-
-						if(currPanel.hasClass("landPanel-4")){
-								$(".btn-index").hide();
-
-							
-
-							panel1.show();
-
-						
-
-					currPanel.slideUp( "slow", function() {
-						 
-						    
-						  });
-
-						}
-
-						else{
-
-
-
-						 currPanel.next().show();
-
-						
-
-					currPanel.slideUp( "slow", function() {
-						$(".btn-index").show();
-					
-						    
-						  });
+	$(".btn-nextPanel").click(function() {
+		/*this.stop().animate({scrollTop:0}, '500', 'swing', function() { 
+							});*/
+		var currPanel=$(this).parent();
+			/*currPanel.hide();*/
+			if(currPanel.hasClass("landPanel-4")){
+				$(".btn-index").hide();						
+				panel1.show();					
+				currPanel.slideUp( "slow", function() {					 
+		     });
+			}
+			else{
+	            currPanel.next().show();
+				currPanel.slideUp( "slow", function() {
+					$(".btn-index").show();
+				  });
 				}
-					
-
-						
-
-						
-						
-   
-});
-
-
-
-
-
-
-
-
+	});
 });
