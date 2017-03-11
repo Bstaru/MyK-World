@@ -590,13 +590,25 @@ Colores:
 
 	
 
-	.landPanel-1 {background-color: black;}
-	.landPanel-2 {background-color: red;}
-	.landPanel-3 {background-color: green;}
-	.landPanel-4 {background-color: blue;}
+	.landPanel-1 {background-color: #f6e6cb;}
+	.landPanel-2 {background-color: #ecb1b6;}
+	.landPanel-3 {background-color: #d4c3b7;}
+	.landPanel-4 {background-color: #f1e3e4;}
 
 	.btn-nextPanel{
 		position: absolute;
 		top:95%;
+	}
+
+	.btn-index{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+
+	}
+
+	.Landpage-item img{
+		width: 100%;
+		height: 100%;
 	}
 

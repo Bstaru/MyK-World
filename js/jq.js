@@ -17,6 +17,7 @@ $(document).ready(function(){
 
 
   $(".Landpage-item").hide();
+
    panel1.show();
 
 
@@ -32,7 +33,7 @@ $(".btn-nextPanel").click(function() {
 						/*currPanel.hide();*/
 
 						if(currPanel.hasClass("landPanel-4")){
-
+								$(".btn-index").hide();
 
 							
 
@@ -52,10 +53,12 @@ $(".btn-nextPanel").click(function() {
 
 
 						 currPanel.next().show();
+
 						
 
 					currPanel.slideUp( "slow", function() {
-						 
+						$(".btn-index").show();
+					
 						    
 						  });
 				}
