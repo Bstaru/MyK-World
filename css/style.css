@@ -582,7 +582,7 @@ Colores:
 .viewport {
     height: 100%;
 }
-	.Landpage{
+	.Landpage,.Landpage-item{
 
 		height: 100%;
 
@@ -591,7 +591,7 @@ Colores:
 	
 
 	.landPanel-1 {background-color: black;}
-	.landPanel-2 {background-color: red;}/*
+	.landPanel-2 {background-color: red;}
 	.landPanel-3 {background-color: green;}
-	.landPanel-4 {background-color: blue;}*/
+	.landPanel-4 {background-color: blue;}
 

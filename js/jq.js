@@ -11,10 +11,12 @@ $(document).ready(function(){
   var panel3 = $(" .landPanel-3");
   var panel4 = $(" .landPanel-4");
 
+  var panels =$(".Landpage-item");
 
 
 
-  $(".Landpage").hide();
+
+  $(".Landpage-item").hide();
    panel1.show();
 
 
@@ -25,9 +27,14 @@ $(".btn").click(function() {
 	/*this.stop().animate({scrollTop:0}, '500', 'swing', function() { 
 						});*/
 
-						  $(".landPanel-2").show();
+						var currPanel=$(this).parent();
 
-					panel1.slideUp( "slow", function() {
+						/*currPanel.hide();*/
+
+						 currPanel.next().show();
+						
+
+					currPanel.slideUp( "slow", function() {
 						 
 						    
 						  });
