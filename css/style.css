@@ -573,3 +573,25 @@ Colores:
 			color: white;
 			font-size: 15pt;
 				}
+
+	/*-----*/
+
+	html, body {
+    height: 100%;
+}
+.viewport {
+    height: 100%;
+}
+	.Landpage{
+
+		height: 100%;
+
+	}
+
+	
+
+	.landPanel-1 {background-color: black;}
+	.landPanel-2 {background-color: red;}/*
+	.landPanel-3 {background-color: green;}
+	.landPanel-4 {background-color: blue;}*/
+
