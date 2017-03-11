@@ -581,6 +581,7 @@ Colores:
 }
 .viewport {
     height: 100%;
+    overflow: hidden;
 }
 	.Landpage,.Landpage-item{
 

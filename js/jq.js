@@ -17,6 +17,7 @@ $(document).ready(function(){
 
 
   $(".Landpage-item").hide();
+  $(".btn-index").hide();
 
    panel1.show();
 
@@ -26,6 +27,8 @@ $(document).ready(function(){
 
 $(".btn-nextPanel").click(function() {
 	/*this.stop().animate({scrollTop:0}, '500', 'swing', function() { 
+
+
 						});*/
 
 						var currPanel=$(this).parent();
