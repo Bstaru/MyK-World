@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 
 
-$(".btn").click(function() {
+$(".btn-nextPanel").click(function() {
 	/*this.stop().animate({scrollTop:0}, '500', 'swing', function() { 
 						});*/
 
@@ -37,6 +37,7 @@ $(".btn").click(function() {
 							
 
 							panel1.show();
+
 						
 
 					currPanel.slideUp( "slow", function() {

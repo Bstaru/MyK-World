@@ -595,3 +595,8 @@ Colores:
 	.landPanel-3 {background-color: green;}
 	.landPanel-4 {background-color: blue;}
 
+	.btn-nextPanel{
+		position: absolute;
+		top:95%;
+	}
+
