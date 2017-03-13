@@ -10,18 +10,32 @@ Colores:
 
 /*GENERALES*/
 	body{
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-image: url('../img/chino1.jpg');
 		overflow-x: hidden;
+		overflow-y: hidden;
 	}
 	body,input, h1, h2, h3, h4, h5, select, p, a{
 		font-family: 'Lato', sans-serif;
 	}
-	a, a:hover{
+	a, a:hover, a:visited{
 		text-decoration: none;
 	}
 
+/*BACKGROUND*/
+	#rotating-item-wrapper {
+		z-index: 100;
+	    position: relative;
+	    width: 100%;
+	    height: 800px;
+	    background-color: black;
+	}
+	.rotating-item {
+	    display: none;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
 
 /*LOGIN*/
 	.login{
@@ -59,9 +73,21 @@ Colores:
 			background-color: #bf2c50; /*rojo1*/
 			border:2px solid #bf2c50;
 			border-radius: 30px;
-			color: white;
+			color: #fff;
 			font-size: 20pt;
-		}
+			box-shadow: 0 6px #fff;
+			outline: none;
+			}
+			.botonSU:hover, .botonLI:hover{
+				 background-color: #94093b;
+				 border:2px solid #94093b;
+			}
+			.botonSU:active, .botonLI:active {
+			  background-color: #bf2c50;
+			  border:2px solid #bf2c50;
+			  box-shadow: 0 3px #fff;
+			  transform: translateY(3px);
+			}
 
 /*yesLOGIN*/
 	.yeslogin{
@@ -83,6 +109,15 @@ Colores:
 					animation: moveYLI 2s;
 					animation-timing-function: ease;
 					left: 0px;
+				}
+			@keyframes moveLItoSU {
+			    from {left: 0px;}
+			    to {left: -1200px;}
+				}
+				.animacionLItoSU{
+					animation: moveLItoSU 2s;
+					animation-timing-function: ease;
+					left: -1200px;
 				}
 		.logo img{	
 			width: 300px;
@@ -112,7 +147,37 @@ Colores:
 			border-radius: 30px;
 			color: white;
 			font-size: 15pt;
-	}
+			box-shadow: 0 6px #fff;
+			outline: none;
+			}
+			.OkLI:hover{
+				 background-color: #94093b;
+				 border:2px solid #94093b;
+			}
+			.OkLI:active{
+			  background-color: #bf2c50;
+			  border:2px solid #bf2c50;
+			  box-shadow: 0 3px #fff;
+			  transform: translateY(3px);
+			}
+
+	.yeslogin p{
+			color: black;
+			font-size: 15pt;
+			}
+			.singupback{	
+				display: inline-block;	
+				height: 40px;
+				padding: 5px 0;
+				color: #bf2c50;
+				font-size: 15pt;
+			}
+			.singupback:hover{
+				font-size: 15;
+				color:#ffffff;			
+				text-shadow: 0 0 15px #ffffff;
+				transform: scale(1.05);
+			}
 
 /*REGISTRO*/
 	.registro{		
@@ -144,12 +209,12 @@ Colores:
 				}
 		.descSU{
 			text-align:center;
-		}
-		.descSU, .textSU{
-			font-size: 16pt;
-			margin-top: 30px;			
-			color: black;
-		}
+			}
+			.descSU, .textSU{
+				font-size: 16pt;
+				margin-top: 30px;			
+				color: black;
+			}
 		.textSU{
 			padding: 3px;
 			border: 2px solid white;
@@ -165,27 +230,40 @@ Colores:
 			border-radius: 30px;
 			color: white;
 			font-size: 15pt;
+			box-shadow: 0 6px #fff;
+			outline: none;
 		}
+			.OkSU:hover{
+				 background-color: #94093b;
+				 border:2px solid #94093b;
+			}
+			.OkSU:active{
+			  background-color: #bf2c50;
+			  border:2px solid #bf2c50;
+			  box-shadow: 0 3px #fff;
+			  transform: translateY(3px);
+			}
 		.registro p{
 			color: black;
 			font-size: 15pt;
-		}
+			}
 		.loginback{	
 			display: inline-block;	
 			height: 40px;
 			padding: 5px 0;
 			color: #bf2c50;
 			font-size: 15pt;
-		}
-		.loginback:hover{
-			font-size: 15;
-			color:#ffffff;			
-			text-shadow: 0 0 15px #ffffff;
-			transform: scale(1.05);
-		}
+			}
+			.loginback:hover{
+				font-size: 15;
+				color:#ffffff;			
+				text-shadow: 0 0 15px #ffffff;
+				transform: scale(1.05);
+				}
 		
 /*FOOTER*/
 	.pie{
+	z-index: 101;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -209,22 +287,85 @@ Colores:
 	    padding: 3px 0;
 			}
 
+/*about us*/
+.aboutus {
+	z-index: 101;
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  text-align: center;
+	}
+	.aboutus a {
+	  display: inline-block;
+	  font-size: 30px;
+	  transition: all 0.2s;
+	}
+		.cmn-t-scale {
+		  border-radius: 50px;
+		  padding: 10px;
+		  color: #fff;
+		  background-color: #bf2c50;
+		}
+		.cmn-t-scale:hover {
+		  color: #fff;
+		  transform: scale(1.1);
+		}
+
+.landing{	
+	z-index: 102;
+	position: relative;
+	top: 800px;
+	background-color: #f6e6cb;
+	width: 100%;
+	height: 800px;
+	}
+
+	.backIndex{
+		position: absolute;
+		}
+		.backIndex a {color: #fff; text-align: center;}
+		.backIndex span{font-size: 65px;}
+
+	@keyframes landd{ 
+	    from {top: 800px;} 
+	    to {top:0px;} 
+		}
+		.animacionLand{
+			animation: landd 2s linear 0s;
+			animation-timing-function: ease;
+			top: 0px;
+			}
+		.addScroll{overflow-y: inherit;}
+
+	@keyframes backk{ 
+	    from {top: 0px;} 
+	    to {top:800px;} 
+		}
+		.animacionIndex{
+			animation: backk 2s linear 0s;
+			animation-timing-function: ease;
+			top:800px;
+			}
+		.hideScroll{overflow-y: hidden;}
 /*RESPONSIVA*/
 	@media (max-width: 1024px) {
 			body{				
 				background-color: rgb(246,230,203);
-
 				background-size: cover;
 				background-repeat: no-repeat;
 				background-image: none;
 			}
+			#rotating-item-wrapper{
+				z-index: 80;
+				display: none;
+			}
 		 	.fondo img{
 		 		display: none;
-		 	}
+		 		}
 		 	.login{
-			 	top: 10%;
-			 	position: relative;
-		 	}
+			 	position: relative;			 	
+			 	top: 0px;
+		 		}
 				.animacionLI{
 					animation: none;
 					animation-timing-function: none;
@@ -234,11 +375,11 @@ Colores:
 				display: none;
 				z-index: 101;
 				position: absolute;
-				top: 10%;
+				top: 0px;
 				left: 1100px;
 				padding: 50px 0;
 				background-color: rgba(246,230,203,1);		
-			}
+				}
 				.animacionYLI{
 						display: inline;
 						animation: none;
@@ -246,6 +387,8 @@ Colores:
 						left: 0px;
 				}
 			.registro{
+				position: absolute;
+				top: 0px;
 				display: none;
 				z-index: 101;
 				position: absolute;
@@ -271,6 +414,9 @@ Colores:
 				.hideLogin{
 					display: none;
 				}
+			.aboutus{
+				display: none;
+			}
 	}
-
+	
 

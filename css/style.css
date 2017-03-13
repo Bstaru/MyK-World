@@ -496,11 +496,23 @@ Colores:
 		height: 40px;
 		margin: 15px;
 		background-color: #bf2c50;
-		border:2px solid #fff;
+		border:2px solid #bf2c50;
 		border-radius: 30px;
 		color: white;
 		font-size: 15pt;
-			}
+		box-shadow: 0 6px #fff;
+		outline: none;
+		}
+		.OkEdit:hover{
+			 background-color: #94093b;
+			 border:2px solid #94093b;
+		}
+		.OkEdit:active{
+		  background-color: #bf2c50;
+		  border:2px solid #bf2c50;
+		  box-shadow: 0 3px #fff;
+		 transform: translateY(3px);
+		}
 
 /*----------------------------------- CONFIG-ACCOUNT--------------------------------------------------*/
 	.cmn-toggle {
@@ -574,7 +586,8 @@ Colores:
 			font-size: 15pt;
 				}
 
-	/*--lo ultimo hecho---*/
+
+/*--lo ultimo hecho---*/
 
 	html, body {
     height: 100%;
