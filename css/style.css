@@ -16,7 +16,7 @@ Colores:
 	body,input, h1, h2, h3, h4, h5, select, p, a{
 		font-family: 'Lato', sans-serif;
 	}
-	a, a:hover{
+	a, a:hover, a:visited{
 		text-decoration: none;
 	}
 	ul{
@@ -490,7 +490,7 @@ Colores:
 		color: black;
 		border: none;
 		border-radius: 30px;
-		}
+		}	
 	.OkEdit{
 		width: 100px;
 		height: 40px;
@@ -586,20 +586,62 @@ Colores:
 			font-size: 15pt;
 				}
 
+/*-------------------------------------------- LISTA--------------------------------------------------*/
+	.mdlHead{
+		background-color: #bf2c50;
+			}
+			.mdlHead h4{color: #fff;}
 
-/*--lo ultimo hecho---*/
+			.btnMdlClose{
+				height: 40px;
+				margin: 15px;
+				background-color: #bf2c50;
+				border:2px solid #bf2c50;
+				color: white;
+				font-size: 15pt;
+				box-shadow: 0 6px #E5E5E5;
+				outline: none;
+				}
+				.btnMdlClose:hover{
+					 background-color: #94093b;
+					 border:2px solid #E5E5E5;
+				}
+				 .btnMdlClose:active{
+				  background-color: #bf2c50;
+				  border:2px solid #bf2c50;
+				  box-shadow: 0 3px #E5E5E5;
+				 transform: translateY(3px);
+				}
 
-	html, body {
-    height: 100%;
-}
-.viewport {
-    height: 100%;
-    overflow: hidden;
-}
-	.Landpage,.Landpage-item{
+	.listaCont{
+		background-color: #991c43;
+		margin: 20px 8%;
+		border-radius: 30px;
+		padding: 20px;
+		}
 
-		height: 100%;
+		.btnsList{
+			height: 40px;
+			margin: 15px;
+			background-color: #bf2c50;
+			border:2px solid #bf2c50;
+			color: white;
+			font-size: 15pt;
+			box-shadow: 0 6px #fff;
+			outline: none;
+			}
+			.btnsList:hover{
+				 background-color: #94093b;
+				 border:2px solid #94093b;
+			}
+			.btnsList:active{
+			  background-color: #bf2c50;
+			  border:2px solid #bf2c50;
+			  box-shadow: 0 3px #fff;
+			 transform: translateY(3px);
+			}
 
+<<<<<<< HEAD
 
 	}
 
@@ -610,25 +652,78 @@ Colores:
 	.landPanel-2 {background-image: url("../img/back2.png");}
 	.landPanel-3 {background-image: url("../img/back4.png");}
 	.landPanel-4 {background-image: url("../img/back1.png");}
+=======
+		.listaCont li{
+			min-height: 170px;
+			}
 
-	.btn-nextPanel{
-		position: absolute;
-		top:95%;
+		.listaCont li:hover{
+			background-color: rgba(255,255,255,0.7);
+			}
+
+			.nameDramaCont, .imgDramaCont{
+				display: inline-block;
+			}	
+			.imgDramaCont{
+				margin: 0 auto;				
+				text-align: center;
+				}
+				.imgDramaCont img{
+					width: 100px;
+				}
+			.nameDramaCont, .moreDramaCont{
+				height: 150px;
+				line-height: 150px;
+				text-align: center;
+				}
+				.nameDramaCont a, .moreDramaCont a{
+					font-size: 23px;
+					color: #991C43;
+				}
+			.Eps{
+				width:35px;
+				border: none;
+				background-color: rgba(255,255,255,0.0);
+			}
+			.moreDramaCont{
+				font-size: 25px;
+				}
+				.moreDramaCont a{
+					border-radius: 30px;
+				}
+>>>>>>> origin/master
+
+
+	@media (max-width: 900px) {
+		.listaCont li{
+			min-height: 500px;
+			}
+
 	}
 
-	.btn-index{
-		position: fixed;
-		top: 0%;
-		left: 0%;
-
-	}
-
+<<<<<<< HEAD
 	.Landpage-item img{
 		width: 100%;
 		height: 100%;
 		display: inline-block;
-	}
+=======
+/*--lo ultimo hecho---
 
+	html, body {
+    height: 100%;
+>>>>>>> origin/master
+	}
+	.viewport {
+	    height: 100%;
+	    overflow: hidden;
+	}
+		.Landpage,.Landpage-item{
+
+			height: 100%;
+
+		}
+
+<<<<<<< HEAD
 	.panel-transparent{ 
 		 background: none;
 		}
@@ -644,3 +739,29 @@ Colores:
 	.Landpage-item p{color: #c4bcbc;}
 	
 	
+=======
+		
+
+		.landPanel-1 {background-color: #f6e6cb;}
+		.landPanel-2 {background-color: #ecb1b6;}
+		.landPanel-3 {background-color: #d4c3b7;}
+		.landPanel-4 {background-color: #f1e3e4;}
+
+		.btn-nextPanel{
+			position: absolute;
+			top:95%;
+		}
+
+		.btn-index{
+			position: fixed;
+			top: 0%;
+			left: 0%;
+
+		}
+
+		.Landpage-item img{
+			width: 100%;
+			height: 100%;
+		}
+*/
+>>>>>>> origin/master

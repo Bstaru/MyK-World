@@ -300,13 +300,13 @@ Colores:
 	  font-size: 30px;
 	  transition: all 0.2s;
 	}
-		.cmn-t-scale {
+		.btnAbout {
 		  border-radius: 50px;
 		  padding: 10px;
 		  color: #fff;
 		  background-color: #bf2c50;
 		}
-		.cmn-t-scale:hover {
+		.btnAbout:hover {
 		  color: #fff;
 		  transform: scale(1.1);
 		}

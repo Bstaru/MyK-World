@@ -58,7 +58,7 @@ function MoverLand(){
 	$("body").addClass('addScroll');
 }
 $(document).ready(function(){
-    $(".cmn-t-scale").click(MoverLand);
+    $(".btnAbout").click(MoverLand);
 });
 
 function MoverIndex(){
@@ -66,6 +66,6 @@ function MoverIndex(){
 	$("body").addClass('hideScroll');
 }
 $(document).ready(function(){
-    $(".bakin").click(MoverIndex);
+    $(".backin").click(MoverIndex);
 });
 
