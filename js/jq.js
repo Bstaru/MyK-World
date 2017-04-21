@@ -13,16 +13,24 @@ $(document).ready(function(){
 
   var panels =$(".Landpage-item");
 
+  var currPanel;
+
 
   $(".Landpage-item").hide();
   $(".btn-index").hide();
 
-   panel1.show();
+  
+  
+
+  	$(".btnAbout").click(function() {
+		panel1.show();	
+		currPanel=panel1;
+	});
 
 	$(".btn-nextPanel").click(function() {
 		/*this.stop().animate({scrollTop:0}, '500', 'swing', function() { 
 							});*/
-		var currPanel=$(this).parent();
+		currPanel=$(this).parent();
 			/*currPanel.hide();*/
 			if(currPanel.hasClass("landPanel-4")){
 				$(".btn-index").hide();						

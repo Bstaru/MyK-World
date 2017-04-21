@@ -418,5 +418,89 @@ Colores:
 				display: none;
 			}
 	}
+
+
+
+
+	
+	.Landpage-item img{
+		width: 100%;
+		height: 100%;
+		display: inline-block;}
+
+		html, body,.landing,.backIndex {
+    height: 100%;
+
+	}
+
+	.landing-button{
+		height: 10%;
+	}
+	.Landpage{
+		height:90%;
+	}
+
+		.item{
+		height:40%;
+	}
+
+
+
+
+	.viewport {
+	    height: 100%;
+	    overflow: hidden;
+	}
+		.Landpage-item{
+
+			height:100%;
+
+		}
+
+		.panel-transparent{ 
+		 background: none;
+		 height:40%;
+
+		}
+	.panel-transparent .panel-body{background:rgba(33, 33, 33, 0.77); display: inline-block; }
+	.panel-transparent .panel-heading{ background: rgba(33, 33, 33, 0.49);}
+	.panel-centered{margin: auto;
+	position: absolute;
+	   
+	    left: 50%;
+	    top: 40%;
+	    transform: translateX(-50%) translateY(-50%);}
+
+	.Landpage-item h2{color: #bf2c50;}
+	.Landpage-item p{color: #c4bcbc;}
 	
 
+
+		.landPanel-1 {background: url("../img/back1.png") center center no-repeat ; }
+		.landPanel-2 {background: url("../img/back2.png") center center no-repeat  ; }
+		.landPanel-3 {background: url("../img/back3.png") center center no-repeat  ; }
+		.landPanel-4 {background: url("../img/back4.png") center center no-repeat ; }
+
+
+
+
+		.btn-nextPanel{
+			position: absolute;
+			top:95%;
+		}
+
+		.btn-index{
+			position: fixed;
+			top: 0%;
+			left: 0%;
+
+		}
+
+		span.Landpage-item-txt, .panel-heading h2{
+			font-size: 14px;
+		}
+
+		.Landpage-item img{
+			width: 100%;
+			height: 100%;
+		}
