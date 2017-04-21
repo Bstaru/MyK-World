@@ -703,6 +703,8 @@ Colores:
 
 	}
 
+	.landing{height: 100%;}
+
 
 	.landPanel-1,.landPanel-2,.landPanel-3,.landPanel-4 { background-size: 100%;display: inline-block;}
 
