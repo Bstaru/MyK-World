@@ -22,7 +22,7 @@ class UserDramaTable extends Migration
                  $table->foreign('idDrama')->references('idDrama')->on('Drama');
 
             $table->enum('dramaStatus', ['Watching', 'Completed','onHold', 'Dropped','Plan to watch'])->nullable();
-            $table->int('episodesWatched');
+            $table->integer('episodesWatched');
 
             $table->timestamps();
         });

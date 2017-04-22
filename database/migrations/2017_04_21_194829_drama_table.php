@@ -16,14 +16,14 @@ class DramaTable extends Migration
         Schema::create('drama', function (Blueprint $table) {
              $table->increments('idDrama');
             $table->string('dramaName');
-            $table->int('emissionYear');
-            $table->int('numberOfEpisodes');
+            $table->integer('emissionYear');
+            $table->integer('numberOfEpisodes');
             $table->string('description')->nullable();
             $table->string('genre')->nullable();
-            $table->int('rating')->nullable();
+            $table->integer('rating')->nullable();
             $table->string('dramaPhotoPath')->nullable();
 
-            $table->int('timesFavorited');
+            $table->integer('timesFavorited');
             
             $table->timestamps();
         });

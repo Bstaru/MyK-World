@@ -17,7 +17,7 @@ class GroupTable extends Migration
              $table->increments('idGroup');
             $table->string('groupName');
             $table->enum('groupType', ['Male', 'Female','Mix']);
-            $table->int('memberNumber');
+            $table->integer('memberNumber');
             $table->string('agency')->nullable();
             $table->date('dateOfDebut')->nullable();
             $table->string('fansite')->nullable();
@@ -28,7 +28,7 @@ class GroupTable extends Migration
             $table->string('song3')->nullable();
             $table->string('groupPhotoPath')->nullable();
 
-            $table->int('timesFavorited');
+            $table->integer('timesFavorited');
 
             $table->timestamps();
         });

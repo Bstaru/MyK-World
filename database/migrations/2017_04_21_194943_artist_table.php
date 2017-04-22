@@ -36,7 +36,7 @@ class ArtistTable extends Migration
            
             $table->string('artistAvatarPath')->nullable();
 
-            $table->int('timesFavorited');
+            $table->integer('timesFavorited');
 
             $table->timestamps();
         });
