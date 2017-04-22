@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateArtistTable extends Migration
+class ArtistTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class CreateArtistTable extends Migration
      */
     public function up()
     {
-        Schema::create('Artist', function (Blueprint $table) {
+        Schema::create('artist', function (Blueprint $table) {
             $table->increments('idArtist');
+
+            $table->enum('typeArtist', ['Idol', 'Actor']);
             $table->integer('idGroup')->unsigned()->nullable();
                  $table->foreign('idGroup')->references('idGroup')->on('Group');
             
@@ -34,11 +36,9 @@ class CreateArtistTable extends Migration
            
             $table->string('artistAvatarPath')->nullable();
 
-            
-          
+            $table->int('timesFavorited');
 
             $table->timestamps();
-    
         });
     }
 
@@ -49,6 +49,6 @@ class CreateArtistTable extends Migration
      */
     public function down()
     {
-        Schema::drop('Artist');
+        Schema::dropIfExists('artist');
     }
 }

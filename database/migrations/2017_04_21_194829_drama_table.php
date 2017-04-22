@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDramaTable extends Migration
+class DramaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,19 @@ class CreateDramaTable extends Migration
      */
     public function up()
     {
-
-         Schema::create('Drama', function (Blueprint $table) {
-
-           $table->increments('idDrama');
+        Schema::create('drama', function (Blueprint $table) {
+             $table->increments('idDrama');
             $table->string('dramaName');
             $table->int('emissionYear');
+            $table->int('numberOfEpisodes');
             $table->string('description')->nullable();
             $table->string('genre')->nullable();
             $table->int('rating')->nullable();
             $table->string('dramaPhotoPath')->nullable();
 
+            $table->int('timesFavorited');
+            
+            $table->timestamps();
         });
     }
 
@@ -34,6 +36,6 @@ class CreateDramaTable extends Migration
      */
     public function down()
     {
-        Schema::drop('Drama');
+        Schema::dropIfExists('drama');
     }
 }
