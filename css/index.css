@@ -462,8 +462,8 @@ Colores:
 		 height:40%;
 
 		}
-	.panel-transparent .panel-body{background:rgba(33, 33, 33, 0.77); display: inline-block; }
-	.panel-transparent .panel-heading{ background: rgba(33, 33, 33, 0.49);}
+	.panel-transparent .panel-body{background:rgba(241, 241, 255, 0.5); display: inline-block; }
+	.panel-transparent .panel-heading{ background: rgba(245, 245, 218, 0.5);}
 	.panel-centered{margin: auto;
 	position: absolute;
 	   
@@ -472,13 +472,13 @@ Colores:
 	    transform: translateX(-50%) translateY(-50%);}
 
 	.Landpage-item h2{color: #bf2c50;}
-	.Landpage-item p{color: #c4bcbc;}
+	.Landpage-item p{color:rgb(175, 175, 161);}
 	
 
 
 		.landPanel-1 {background: url("../img/back1.png") center center no-repeat ; }
-		.landPanel-2 {background: url("../img/back2.png") center center no-repeat  ; }
-		.landPanel-3 {background: url("../img/back3.png") center center no-repeat  ; }
+		.landPanel-2 {background: url("../img/back4.png") center center no-repeat  ; }
+		.landPanel-3 {background: url("../img/back2.png") center center no-repeat  ; }
 		.landPanel-4 {background: url("../img/back4.png") center center no-repeat ; }
 
 
@@ -497,7 +497,7 @@ Colores:
 		}
 
 		span.Landpage-item-txt, .panel-heading h2{
-			font-size: 14px;
+			font-size: 16px;
 		}
 
 		.Landpage-item img{
