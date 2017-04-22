@@ -46,7 +46,7 @@ class UserTable extends Migration
                  $table->foreign('idDrama')->references('idDrama')->on('Drama');
 
             $table->integer('idDramaArtist')->unsigned()->nullable();
-                 $table->foreign('idArtist')->references('idArtist')->on('Artist');
+                 $table->foreign('idDramaArtist')->references('idArtist')->on('Artist');
             
 
 
