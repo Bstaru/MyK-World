@@ -699,7 +699,7 @@ Colores:
 			 transform: translateY(3px);
 			}
 
-<<<<<<< HEAD
+
 
 	}
 
@@ -712,7 +712,7 @@ Colores:
 	.landPanel-2 {background-image: url("../img/back2.png");}
 	.landPanel-3 {background-image: url("../img/back4.png");}
 	.landPanel-4 {background-image: url("../img/back1.png");}
-=======
+
 		.listaCont li{
 			min-height: 170px;
 			}
@@ -751,7 +751,7 @@ Colores:
 				.moreDramaCont a{
 					border-radius: 30px;
 				}
->>>>>>> origin/master
+
 
 
 	@media (max-width: 900px) {
@@ -761,7 +761,7 @@ Colores:
 
 	}
 
-<<<<<<< HEAD
+
 /*---------------------------------------------SEARCH-------------------------------------------------*/
 	.labus{
 		background-color: #991c43;
@@ -792,14 +792,12 @@ Colores:
 					color: #991C43;
 				}
 
-=======
-<<<<<<< HEAD
+
 	.Landpage-item img{
 		width: 100%;
 		height: 100%;
 		display: inline-block;
-=======
->>>>>>> ed72e72db2820dad5aa2cae74c5c535c5d76877b
+
 /*--lo ultimo hecho---
 
 	html, body {
@@ -857,4 +855,4 @@ Colores:
 			height: 100%;
 		}
 */
->>>>>>> origin/master
+
