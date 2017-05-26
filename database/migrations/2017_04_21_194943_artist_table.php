@@ -13,12 +13,12 @@ class ArtistTable extends Migration
      */
     public function up()
     {
-        Schema::create('artist', function (Blueprint $table) {
+        Schema::create('artists', function (Blueprint $table) {
             $table->increments('idArtist');
 
             $table->enum('typeArtist', ['Idol', 'Actor']);
             $table->integer('idGroup')->unsigned()->nullable();
-                 $table->foreign('idGroup')->references('idGroup')->on('Group');
+                 $table->foreign('idGroup')->references('idGroup')->on('Groups');
             
             $table->string('artistName');
             $table->string('artistFullName');
@@ -49,6 +49,6 @@ class ArtistTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('artist');
+        Schema::dropIfExists('artists');
     }
 }

@@ -13,12 +13,12 @@ class UserTable extends Migration
      */
     public function up()
     {
-        Schema::create('user', function (Blueprint $table) {
-            $table->increments('idUser');
-            $table->string('userName');
-            $table->string('email');  
-            $table->string('userPassword');
-            $table->string('nameUser')->nullable();
+        Schema::create('users', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('username')->default("Koopa");
+            $table->string('email')->unique();  
+            $table->string('password',255);
+            $table->string('name')->nullable();
             $table->string('lastname')->nullable();
             $table->date('birthday')->nullable();
             $table->enum('gender', ['Male', 'Female','Other'])->nullable();
@@ -37,20 +37,21 @@ class UserTable extends Migration
 
 
             $table->integer('idGroup')->unsigned()->nullable();
-                 $table->foreign('idGroup')->references('idGroup')->on('Group');
+                 $table->foreign('idGroup')->references('idGroup')->on('Groups');
 
             $table->integer('idArtist')->unsigned()->nullable();
-                 $table->foreign('idArtist')->references('idArtist')->on('Artist');
+                 $table->foreign('idArtist')->references('idArtist')->on('Artists');
 
             $table->integer('idDrama')->unsigned()->nullable();
-                 $table->foreign('idDrama')->references('idDrama')->on('Drama');
+                 $table->foreign('idDrama')->references('idDrama')->on('Dramas');
 
             $table->integer('idDramaArtist')->unsigned()->nullable();
-                 $table->foreign('idDramaArtist')->references('idArtist')->on('Artist');
+                 $table->foreign('idDramaArtist')->references('idArtist')->on('Artists');
             
 
 
 
+            $table->string('remember_token')->nullable();;
             $table->boolean('active')->default(true);
 
             $table->timestamps();
@@ -64,6 +65,6 @@ class UserTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user');
+        Schema::dropIfExists('users');
     }
 }

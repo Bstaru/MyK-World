@@ -13,7 +13,7 @@ class GroupTable extends Migration
      */
     public function up()
     {
-        Schema::create('group', function (Blueprint $table) {
+        Schema::create('groups', function (Blueprint $table) {
              $table->increments('idGroup');
             $table->string('groupName');
             $table->enum('groupType', ['Male', 'Female','Mix']);
@@ -41,6 +41,6 @@ class GroupTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('group');
+        Schema::dropIfExists('groups');
     }
 }

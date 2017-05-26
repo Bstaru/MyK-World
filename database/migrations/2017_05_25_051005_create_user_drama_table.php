@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class UserDramaTable extends Migration
+class CreateUserDramaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -39,11 +39,5 @@ class UserDramaTable extends Migration
     public function down()
     {
         Schema::dropIfExists('userDramas');
-        Schema::table('role_user', function (Blueprint $table) {
-        $table->dropForeign('role_user_role_id_foreign');
-        $table->dropForeign('role_user_user_id_foreign');
-        $table->dropPrimary();
-    });
-     
     }
 }

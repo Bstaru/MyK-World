@@ -13,7 +13,7 @@ class DramaTable extends Migration
      */
     public function up()
     {
-        Schema::create('drama', function (Blueprint $table) {
+        Schema::create('dramas', function (Blueprint $table) {
              $table->increments('idDrama');
             $table->string('dramaName');
             $table->integer('emissionYear');
@@ -36,6 +36,6 @@ class DramaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('drama');
+        Schema::dropIfExists('dramas');
     }
 }
