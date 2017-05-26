@@ -107,7 +107,7 @@ Colores:
 
 	.carouselMenu li a:hover, .carouselMenu li.active a:hover{color: #991c43;background-color:#f6e6cb;}
 
-	.separator{width: 100%; height: 10%; background-color:#bf2c50; }
+	.separator{width: 100%; min-height: 10%; background-color:#bf2c50; margin-bottom: 20px;}
 
 
 	.newsBoard{
@@ -431,6 +431,10 @@ Colores:
 				font-size: 20pt;
 				}
 		.followgpo{
+			display: inline-block;
+			}
+			.followgpo form{
+			display: inline-block;
 			}
 			.followgpo img{
 				display: inline-block;
@@ -753,7 +757,6 @@ Colores:
 				}
 
 
-
 	@media (max-width: 900px) {
 		.listaCont li{
 			min-height: 500px;
@@ -797,7 +800,17 @@ Colores:
 		width: 100%;
 		height: 100%;
 		display: inline-block;
+}
+button[type~=submit]{
+	 background-color: transparent; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
 
+}
 /*--lo ultimo hecho---
 
 	html, body {

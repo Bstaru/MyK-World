@@ -45,4 +45,11 @@ $(document).ready(function(){
 				  });
 				}
 	});
+
+	  	$(".list-modal-btn").click(function() {
+	  		 
+	  		var idDrama = $( this ).attr( "Drama" );
+	  		
+			$("#idDramaModal").val(idDrama);
+	});
 });
