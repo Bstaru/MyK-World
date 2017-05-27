@@ -28,7 +28,7 @@
               </button>
               
           </form>
-          <form class="form-horizontal" role="form" method="POST" action="/add_to_fav">
+          <form class="form-horizontal" role="form" method="POST" action="/add_to_fav_drama">
              {{ csrf_field() }}
              <input type="hidden" name="idDrama" value="{{ $drama->idDrama }}">
              <button type="submit" value="Submit">

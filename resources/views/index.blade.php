@@ -121,10 +121,10 @@
 					<input type="date" name="birthday" class="textSU col-lg-8 col-md-8 col-sm-12 col-xs-12">
 					
 					<div class="descSU col-lg-4 col-md-4 col-sm-12 col-xs-12">Gender</div>
-					<select  id="gender" class="textSU col-lg-8 col-md-8 col-sm-12 col-xs-12">
-						<option value="woman">Female</option>
-						<option value="man">Male</option>
-						<option value="other">Other</option>
+					<select  id="gender"  name="gender"  class="textSU col-lg-8 col-md-8 col-sm-12 col-xs-12">
+						<option value="2">Female</option>
+						<option value="1">Male</option>
+						<option value="3">Other</option>
 					</select>
 
 					<center>
