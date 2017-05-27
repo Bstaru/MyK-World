@@ -18,12 +18,11 @@ class DramaTable extends Migration
             $table->string('dramaName');
             $table->integer('emissionYear');
             $table->integer('numberOfEpisodes');
-            $table->string('description')->nullable();
+            $table->text('description')->nullable();
             $table->string('genre')->nullable();
             $table->integer('rating')->nullable();
             $table->string('dramaPhotoPath')->nullable();
-
-            $table->integer('timesFavorited');
+            $table->integer('timesFavorited')->default(0);
             
             $table->timestamps();
         });

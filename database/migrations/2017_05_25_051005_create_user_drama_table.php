@@ -16,8 +16,6 @@ class CreateUserDramaTable extends Migration
         Schema::create('userDramas', function (Blueprint $table) {
             $table->integer('idUser')->unsigned()->nullable();;
                 $table->foreign('idUser')->references('id')->on('Users');
-            
-
             $table->integer('idDrama')->unsigned()->nullable();
                  $table->foreign('idDrama')->references('idDrama')->on('Dramas');
 

@@ -15,11 +15,9 @@ class ArtistTable extends Migration
     {
         Schema::create('artists', function (Blueprint $table) {
             $table->increments('idArtist');
-
             $table->enum('typeArtist', ['Idol', 'Actor']);
             $table->integer('idGroup')->unsigned()->nullable();
-                 $table->foreign('idGroup')->references('idGroup')->on('Groups');
-            
+            $table->foreign('idGroup')->references('idGroup')->on('Groups');            
             $table->string('artistName');
             $table->string('artistFullName');
             $table->string('agency')->nullable();
@@ -31,12 +29,9 @@ class ArtistTable extends Migration
             $table->enum('artistGender', ['Male', 'Female','Other'])->nullable();
             $table->string('bloodType')->nullable();
             $table->text('songs')->nullable();
-            $table->text('more')->nullable();
-
-           
+            $table->text('more')->nullable();           
             $table->string('artistAvatarPath')->nullable();
-
-            $table->integer('timesFavorited');
+           $table->integer('timesFavorited')->default(0);
 
             $table->timestamps();
         });

@@ -11,23 +11,44 @@ class user_seeder extends Seeder
      */
     public function run()
     {
-         DB::table('user')->insert([
-            'userName' => str_random(10),
-            'email' => str_random(10).'@gmail.com',
-            'userPassword' => bcrypt('secret'),
-            'nameUser' => str_random(10),
-            'lastname' => str_random(10),
-            'birthday' => now();
-            'gender' => 1,
-            'userDescription' => str_random(200),
-            'userAvatarPath' => str_random(200),
-            'showGender' => str_random(10),
-            'showBirthday' => str_random(10),
-            'idGroup' => str_random(10),
-            'idArtist' => str_random(10),
-            'idDrama' => str_random(10),
-            'idDramaArtist' => str_random(10),
+        DB::table('users')->insert([
+            'username' => 'bstaru95',
+            'email' => 'ncm1208@gmail.com',
+            'password' => 'shineekey',
+            'name' => 'Natalie',
+            'lastname' => 'Conde Mejía',
+            'birthday' => '1995-12-08',
+            'gender' => 2,
+            'userDescription' => 'Soy chida ekisde',
+            'userAvatarPath' => '', //..\assets\images\Images\1io.png
+            'showGender' => 1,
+            'showBirthday' => 1,
+            'idGroup' => null, 
+            'idArtist' => null,
+            'idDrama' => null,
+            'idDramaArtist' => null,
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now()
+        ]);
 
+        DB::table('users')->insert([
+            'username' => 'shio',
+            'email' => 'shio@gmail.com',
+            'password' => 'shio',
+            'name' => 'Rocío',
+            'lastname' => 'Hernández Ramírez',
+            'birthday' => '1995-07-11',
+            'gender' => 2,
+            'userDescription' => 'HUAS HUAS HUAS',
+            'userAvatarPath' => '',//..\assets\images\Images\1hue.jpg
+            'showGender' => 0,
+            'showBirthday' => 1,
+            'idGroup' => null,
+            'idArtist' => null,
+            'idDrama' => null,
+            'idDramaArtist' => null,
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now()
         ]);
     }
 }
