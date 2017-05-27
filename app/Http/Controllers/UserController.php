@@ -71,12 +71,12 @@ class UserController extends Controller
         $user = new User;
 
         $user->username = $request->username;
-         $user->email = $request->email;
-          $user->password = bcrypt($request->password);
-           $user->name = $request->name;
-            $user->lastname = $request->lastname;
-             $user->birthday = $request->birthday;
-             $user->gender = $request->gender;
+        $user->email = $request->email;
+        $user->password = bcrypt($request->password);
+        $user->name = $request->name;
+        $user->lastname = $request->lastname;
+        $user->birthday = $request->birthday;
+        $user->gender = $request->gender;
 
         $user->save();
 

@@ -38,7 +38,7 @@ class DramaController extends Controller
         
     }
 
-    public function add_to_fav(Request $request)
+    public function add_to_fav_drama(Request $request)
     {
 
         $id = Auth::id();
@@ -51,6 +51,8 @@ class DramaController extends Controller
 
        $user->save();
       return back(); return redirect()->back();
+
+      return $request->idDrama;
     }
 
  /**
