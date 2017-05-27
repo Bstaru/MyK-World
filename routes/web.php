@@ -45,7 +45,7 @@ Route::post('delete_from_list', 'ListController@delete_from_list');
 
 Route::get('drama/{id}', 'DramaController')->name('drama');
 Route::post('add_to_list', 'DramaController@add_to_list')->name('drama');
-Route::post('add_to_fav', 'DramaController@add_to_fav')->name('drama');
+Route::post('add_to_fav_drama', 'DramaController@add_to_fav_drama')->name('drama');
 
 Route::post('search', 'SearchController')->name('search');
 Route::get('search/{drama?}{artist?}{user?}', 'SearchController')->name('search');
