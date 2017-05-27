@@ -9,7 +9,7 @@
 
 
 	<!--Librerias-->			
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<script type="text/javascript" src="js/jq.js" ></script>
 

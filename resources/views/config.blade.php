@@ -10,7 +10,7 @@
 
     <div class="tittle-edt">Change your profile information</div>
 
-    <form method="post" action="update_profile"  class="form-horizontal formu-edit text-center">   
+    <form method="post" action="update_profile"  class="form-horizontal formu-edit text-center" enctype="multipart/form-data">   
       {{ csrf_field() }}    
 
         <div class="justclick">
@@ -19,7 +19,7 @@
 
         <div class = "fotito">
             <div class="uploader" onclick="$('#filePhoto').click()">
-                <img src="img/default.png"/>
+                <img src="{{ Auth::user()->userAvatarPath }}"/>
                 <input type="file" name="userprofile_picture"  id="filePhoto" />
             </div>
         </div>

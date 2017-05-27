@@ -11,7 +11,7 @@
          <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <!--Librerias-->
-        <script type="text/javascript" src="{{asset('js/jquery-2.1.4.min.js')}}" ></script>
+        <script type="text/javascript" src="{{asset('js/jquery-3.2.1.min.js')}}" ></script>
         <script type="text/javascript" src="{{asset('js/jq.js')}}" ></script>
         <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">

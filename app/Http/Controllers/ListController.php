@@ -23,6 +23,12 @@ class ListController extends Controller
         return view('list');
     }
 
+    public function getDramas()
+    {
+     
+      return view('list');
+    }
+
     
     public function update_drama_status(Request $request)
     {
@@ -39,15 +45,33 @@ class ListController extends Controller
        
     }
 
-     public function delete_from_list(Request $request)
+     public function delete_from_list($idDrama)
     {
         $id = Auth::id();
 
           $userDrama = new UserDrama;
           $userDrama = UserDrama::where('idUser', $id)
-          ->where('idDrama', $request->idSelectedDrama);
+          ->where('idDrama', $idDrama);
           $userDrama->delete();
+    }
+   
+    public function recharge_list()
+    {
+       $dramas= User::find(Auth::user()->id)->drama;
 
-      return back(); return redirect()->back();
+          
+
+        return response()->json($dramas);
+    }
+
+    public function add_list($idDrama)
+    {
+      $id = Auth::id();
+
+      DB::table('userdramas')->increment('episodesWatched')
+      ->where([
+          ['idUser', '=', $id],
+          ['idDrama', '=', $idDrama]
+        ]);
     }
 }

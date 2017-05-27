@@ -39,20 +39,24 @@ class ConfigController extends Controller
         $id = Auth::id();
         $user = new User;
         $user =User::findOrFail($id);
+
+        $archivo = $request->file('userprofile_picture');
+        $filename = str_replace(" ", "_", $archivo->getClientOriginalName());
+        $realFileName = $id.rand().$filename;
+        $request->file('userprofile_picture')->move(public_path("assets/images/user/"), $realFileName);
+        $trueFile = "../assets/images/user/".$realFileName;
    
-           $user->name = $request->name;
-            $user->lastname = $request->lastname;
-             $user->birthday = $request->birthday;
-             $user->gender = $request->gender;
-              $user->userDescription = $request->description;
+        $user->name = $request->name;
+        $user->lastname = $request->lastname;
+        $user->birthday = $request->birthday;
+        $user->gender = $request->gender;
+        $user->userDescription = $request->description;
+        $user->userAvatarPath = $trueFile;
 
         $user->save();
 
       return back(); return redirect()->back();
 
-
-        
-       
     }
 
     /**

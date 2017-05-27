@@ -39,9 +39,11 @@ Route::any('group/{id}', 'GroupController')->name('group');
 Route::any('add_Favorite', 'GroupController@add_Favorite')->name('group');
 
 
-Route::get('list', 'ListController')->name('list');
+Route::get('list', 'ListController@getDramas')->name('list');
 Route::post('update_drama_status', 'ListController@update_drama_status');
-Route::post('delete_from_list', 'ListController@delete_from_list');
+Route::get('delete_from_list/{idDrama}', 'ListController@delete_from_list');
+Route::get('/recharge_list', 'ListController@recharge_list');
+Route::get('/add_list/{idDrama}', 'ListController@add_list');
 
 Route::get('drama/{id}', 'DramaController')->name('drama');
 Route::post('add_to_list', 'DramaController@add_to_list')->name('drama');

@@ -27,7 +27,7 @@
           <li  class="list-group-item">   
               
             <div class="imgBusq col-lg-4 col-md-2 col-sm-12 col-xs-12">
-              <img src="img/drama1.jpg" class="img-responsive">
+              <img src="{{$drama->dramaPhotoPath}}" class="img-responsive">
             </div>
 
             <div class="resultBusq col-lg-8 col-md-7 col-sm-12 col-xs-12">
@@ -43,7 +43,7 @@
           <li  class="list-group-item">   
               
             <div class="imgBusq col-lg-4 col-md-2 col-sm-12 col-xs-12">
-              <img src="img/drama1.jpg" class="img-responsive">
+              <img src="{{img/drama1.jpg}}" class="img-responsive">
             </div>
 
             <div class="resultBusq col-lg-8 col-md-7 col-sm-12 col-xs-12">
@@ -65,7 +65,7 @@
           <li  class="list-group-item">   
               
             <div class="imgBusq col-lg-4 col-md-2 col-sm-12 col-xs-12">
-              <img src="img/drama1.jpg" class="img-responsive">
+              <img src="{{$artist->artistAvatarPath}}" class="img-responsive">
             </div>
             <div class="resultBusq col-lg-8 col-md-7 col-sm-12 col-xs-12">
             
@@ -79,7 +79,7 @@
           <li  class="list-group-item">   
               
             <div class="imgBusq col-lg-4 col-md-2 col-sm-12 col-xs-12">
-              <img src="img/drama1.jpg" class="img-responsive">
+              <img src="{{$drama->dramaPhotoPath}}" class="img-responsive">
             </div>
 
             <div class="resultBusq col-lg-8 col-md-7 col-sm-12 col-xs-12">
@@ -96,7 +96,7 @@
           <li  class="list-group-item">   
               
             <div class="imgBusq col-lg-4 col-md-2 col-sm-12 col-xs-12">
-              <img src="img/drama1.jpg" class="img-responsive">
+              <img src="{{$group->groupPhotoPath}}" class="img-responsive">
             </div>
             <div class="resultBusq col-lg-8 col-md-7 col-sm-12 col-xs-12">
              
@@ -126,7 +126,7 @@
           <li  class="list-group-item">   
               
             <div class="imgBusq col-lg-4 col-md-2 col-sm-12 col-xs-12">
-              <img src="img/drama1.jpg" class="img-responsive">
+              <img src="{{$user->userAvatarPath}}" class="img-responsive">
             </div>
             <div class="resultBusq col-lg-8 col-md-7 col-sm-12 col-xs-12">
               <h3>{{ $user->username }}</h3>

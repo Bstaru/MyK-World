@@ -14,7 +14,7 @@ class user_seeder extends Seeder
         DB::table('users')->insert([
             'username' => 'bstaru95',
             'email' => 'ncm1208@gmail.com',
-            'password' => 'shineekey',
+            'password' =>bcrypt( 'shineekey'),
             'name' => 'Natalie',
             'lastname' => 'Conde Mejía',
             'birthday' => '1995-12-08',
@@ -34,7 +34,7 @@ class user_seeder extends Seeder
         DB::table('users')->insert([
             'username' => 'shio',
             'email' => 'shio@gmail.com',
-            'password' => 'shio',
+            'password' => bcrypt('shio'),
             'name' => 'Rocío',
             'lastname' => 'Hernández Ramírez',
             'birthday' => '1995-07-11',
