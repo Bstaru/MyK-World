@@ -46,6 +46,7 @@ class ListController extends Controller
     }
 
      public function delete_from_list($idDrama)
+     
     {
         $id = Auth::id();
 

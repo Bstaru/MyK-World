@@ -43,7 +43,7 @@
           <li  class="list-group-item">   
               
             <div class="imgBusq col-lg-4 col-md-2 col-sm-12 col-xs-12">
-              <img src="{{img/drama1.jpg}}" class="img-responsive">
+              <img src="" class="img-responsive">
             </div>
 
             <div class="resultBusq col-lg-8 col-md-7 col-sm-12 col-xs-12">

@@ -111,6 +111,46 @@ $(document).ready(function(){
 	 	}
 	 });
 
+	 
+	 $(".btn_editResenia").click(function() {
+
+	 	var idResenia= $(this).prev().prev().val();
+	 	var reseniaTxt= $(this).next().val();
+	 	$.ajax({
+		 			type:"GET",
+		 			url:"/update_resenia/"+idResenia+"/"+reseniaTxt,
+		 			contentType:"aplication/json",
+		 			dataType: "json",
+		 			data: '_token =<?php echo csrf_token()?>',
+
+		 			success: function(data){
+		 			}
+		 		});
+	
+		
+	});
+	 
+
+	 $(".btn_deleteResenia").click(function() {
+	 	
+
+	 	var idResenia= $(this).prev().val();
+
+	 	
+	 	$.ajax({
+		 			type:"GET",
+		 			url:"/delete_resenia/"+idResenia,
+		 			contentType:"aplication/json",
+		 			dataType: "json",
+		 			data: '_token =<?php echo csrf_token()?>',
+
+		 			success: function(data){
+		 			}
+		 		});
+	
+		
+	});
+
 
 
 

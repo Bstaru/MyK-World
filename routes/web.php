@@ -54,6 +54,12 @@ Route::get('search/{drama?}{artist?}{user?}', 'SearchController')->name('search'
 //Route::post('add_to_list', 'DramaController@add_to_list')->name('drama');
 
 
+Route::get('resenia/{idResenia}', 'ReseniaContoller')->name('resenia');
+Route::post('/create_resenia', 'ReseniaContoller@create_resenia')->name('resenia');
+Route::get('/update_resenia/{idResenia}/{resenaText}', 'ReseniaContoller@update_resenia');
+Route::get('/delete_resenia/{idResenia}', 'ReseniaContoller@delete_resenia');
+
+
 
 
 //Route::get('profile', 'ProfileController')->name('profile');;

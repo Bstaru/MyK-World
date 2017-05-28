@@ -18,5 +18,10 @@ class Drama extends Model
       ->withTimestamps();
     }
 
+    public function resenia()
+    {
+        return $this->hasMany('App\Resenia','idDrama','idDrama');
+    }
+
 
 }

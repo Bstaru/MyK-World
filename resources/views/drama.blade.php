@@ -74,6 +74,19 @@
           </ul>
       </div>
     </div>
+
+    <div class="row">
+      <h1>Write a review</h1><br>
+      <form class="form-horizontal" role="form" method="POST" action="/create_resenia">
+             {{ csrf_field() }}
+             <textarea rows="10" class="form-control edit_resenia" name="reseniaTxt">
+    
+            </textarea>
+             <input type="hidden" name="idDrama" value="{{ $drama->idDrama }}">
+             <button type="submit" class="btn"> Publish</button>
+              
+        </form>
+    </div>
     @endsection
 
    
